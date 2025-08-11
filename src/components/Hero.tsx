@@ -6,7 +6,7 @@ const Hero: React.FC = () => {
     <section id="hero" className="relative w-full pb-0 pt-32 md:pt-40">
       {/* 전체 너비 메인 컨테이너 */}
       <div className="relative w-full h-[400px] md:h-[500px] overflow-hidden">
-        {/* 배경 이미지 */}
+        {/* 배경 이미지1 */}
         <div className="absolute inset-0">
           <Image
             src="/images/main_hero.jpg"

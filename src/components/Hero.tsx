@@ -58,7 +58,7 @@ const Hero: React.FC = () => {
               height: "0",
               borderStyle: "solid",
               borderWidth: "400px 0 0 200px",
-              borderColor: "transparent transparent transparent #e53e3e",
+              borderColor: "transparent transparent transparent #e2363e",
             }}
           />
 
@@ -70,7 +70,7 @@ const Hero: React.FC = () => {
               height: "0",
               borderStyle: "solid",
               borderWidth: "0 200px 400px 0",
-              borderColor: "transparent #e53e3e transparent transparent",
+              borderColor: "transparent #e2363e transparent transparent",
             }}
           />
         </div>

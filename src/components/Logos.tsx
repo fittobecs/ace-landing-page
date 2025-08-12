@@ -60,7 +60,7 @@ const Logos: React.FC = () => {
           <div className="flex animate-scroll-x">
             {/* 첫 번째 세트 */}
             <div className="flex items-center justify-center min-w-full">
-              {certifications.map((cert, index) => (
+              {certifications.map((cert) => (
                 <div
                   key={`first-${cert.id}`}
                   className="flex-shrink-0 mx-8 cursor-pointer transform transition-transform duration-300 hover:scale-110"
@@ -77,7 +77,7 @@ const Logos: React.FC = () => {
 
             {/* 두 번째 세트 (무한 반복용) */}
             <div className="flex items-center justify-center min-w-full">
-              {certifications.map((cert, index) => (
+              {certifications.map((cert) => (
                 <div
                   key={`second-${cert.id}`}
                   className="flex-shrink-0 mx-8 cursor-pointer transform transition-transform duration-300 hover:scale-110"

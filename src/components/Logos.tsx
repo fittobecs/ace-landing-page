@@ -36,10 +36,6 @@ const Logos: React.FC = () => {
     },
   ]
 
-  const handleLogoClick = (url: string) => {
-    window.location.href = url
-  }
-
   return (
     <section className="py-16 px-5 bg-white">
       {/* 제목 */}

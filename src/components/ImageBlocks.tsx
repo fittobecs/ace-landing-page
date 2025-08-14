@@ -61,7 +61,7 @@ const ImageBlocks: React.FC = () => {
                   <div className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-black rounded-full flex-shrink-0"></div>
                     <span className="text-gray-700 text-lg">
-                      전하는 남발, 시간에 응시 가능
+                      원하는 날짜, 시간에 응시 가능
                     </span>
                   </div>
                   <div className="flex items-center space-x-3">
@@ -79,7 +79,7 @@ const ImageBlocks: React.FC = () => {
                   <div className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-black rounded-full flex-shrink-0"></div>
                     <span className="text-gray-700 text-lg">
-                      즉석 사이트 및 메일로 결과 확인
+                      본사 사이트 및 메일로 결과 확인
                     </span>
                   </div>
                 </div>

@@ -42,12 +42,21 @@ const Header: React.FC = () => {
                 </Link>
               </li>
             ))}
+            <li key="공식 파트너사">
+              <a
+                href="https://www.acefitness.org/resources/partners/international-partners/"
+                className="text-foreground hover:text-foreground-accent transition-colors"
+                target="_blank"
+              >
+                공식 파트너사
+              </a>
+            </li>
             <li>
               <Link
                 href="#cta"
                 className="text-black bg-white border-2 border-[#e2363e] hover:bg-gray-100 px-8 py-3 rounded-full transition-colors"
               >
-                ACE 신청
+                <span className="font-semibold">ACE 신청</span>
               </Link>
             </li>
           </ul>

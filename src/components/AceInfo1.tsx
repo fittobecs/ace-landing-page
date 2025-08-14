@@ -6,7 +6,7 @@ const AceInfo1: React.FC = () => {
       {/* 제목 섹션 */}
       <div className="relative mb-12">
         <h1 className="text-4xl font-bold text-gray-900 mb-4 relative z-10 text-center">
-          ACE는 어떤 단체인가요?
+          ACE란?
         </h1>
         <div className="w-full max-w-md mx-auto h-1 bg-red-400 rounded-full"></div>
       </div>

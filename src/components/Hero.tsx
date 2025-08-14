@@ -1,5 +1,4 @@
-import Image from "next/image";
-import React from "react";
+import React from "react"
 
 const Hero: React.FC = () => {
   return (
@@ -8,13 +7,10 @@ const Hero: React.FC = () => {
       <div className="relative w-full h-[400px] md:h-[500px] overflow-hidden">
         {/* 배경 이미지1 */}
         <div className="absolute inset-0">
-          <Image
+          <img
             src="/images/main_hero.jpg"
             alt="ACE CPT Team Training"
-            fill
-            className="object-cover"
-            quality={85}
-            priority
+            className="w-full h-full object-cover"
           />
 
           {/* 이미지 위 어두운 오버레이 */}
@@ -75,13 +71,13 @@ const Hero: React.FC = () => {
           />
         </div>
 
-        {/* 컨텐츠 */}
+        {/* 컨텐츠 - 완전한 중앙 정렬 */}
         <div className="absolute inset-0 flex items-center justify-center z-10 px-4">
           <div className="text-center text-white max-w-4xl">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-wider drop-shadow-lg">
               ACE CPT
             </h1>
-            <p className="text-lg md:text-xl leading-relaxed drop-shadow-md mb-8">
+            <p className="text-lg md:text-xl leading-relaxed drop-shadow-md">
               미국운동협의회(ACE: American Council on Exercise)가
               <br className="hidden md:block" />
               제공하는 세계적으로 인정받는 퍼스널 트레이너 자격인증 프로그램
@@ -97,7 +93,7 @@ const Hero: React.FC = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Hero;
+export default Hero

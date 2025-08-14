@@ -37,10 +37,6 @@ const Logos: React.FC = () => {
   ]
 
   const handleLogoClick = (url: string) => {
-    // Next.js 라우터를 사용하는 경우
-    // router.push(url);
-
-    // 또는 일반적인 페이지 이동
     window.location.href = url
   }
 
@@ -57,16 +53,15 @@ const Logos: React.FC = () => {
       <div className="max-w-6xl mx-auto">
         <div className="relative overflow-hidden">
           {/* 애니메이션 컨테이너 */}
-          <div className="flex animate-scroll-x">
+          <div className="flex flex-nowrap animate-scroll-x">
             {/* 첫 번째 세트 */}
-            <div className="flex items-center justify-center min-w-full">
+            <div className="flex flex-nowrap items-center justify-center">
               {certifications.map((cert) => (
                 <div
                   key={`first-${cert.id}`}
-                  className="flex-shrink-0 mx-8 cursor-pointer transform transition-transform duration-300 hover:scale-110"
-                  onClick={() => handleLogoClick(cert.url)}
+                  className="flex-shrink-0 mx-8 max-md:mx-3 max-md:w-[16vw] max-md:min-w-[80px] w-40 cursor-pointer transform transition-transform duration-300 hover:scale-110"
                 >
-                  <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-8 w-40 h-24 flex items-center justify-center border border-gray-200">
+                  <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-8 h-24 flex items-center justify-center border border-gray-200">
                     <span className="text-gray-600 font-medium text-center text-sm">
                       {cert.logo}
                     </span>
@@ -76,14 +71,13 @@ const Logos: React.FC = () => {
             </div>
 
             {/* 두 번째 세트 (무한 반복용) */}
-            <div className="flex items-center justify-center min-w-full">
+            <div className="flex flex-nowrap items-center justify-center">
               {certifications.map((cert) => (
                 <div
                   key={`second-${cert.id}`}
-                  className="flex-shrink-0 mx-8 cursor-pointer transform transition-transform duration-300 hover:scale-110"
-                  onClick={() => handleLogoClick(cert.url)}
+                  className="flex-shrink-0 mx-8 max-md:mx-3 max-md:w-[16vw] max-md:min-w-[80px] w-40 cursor-pointer transform transition-transform duration-300 hover:scale-110"
                 >
-                  <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-8 w-40 h-24 flex items-center justify-center border border-gray-200">
+                  <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-8 h-24 flex items-center justify-center border border-gray-200">
                     <span className="text-gray-600 font-medium text-center text-sm">
                       {cert.logo}
                     </span>
@@ -125,6 +119,18 @@ const Logos: React.FC = () => {
         @media (prefers-reduced-motion: reduce) {
           .animate-scroll-x {
             animation: none;
+          }
+        }
+
+        @media (max-width: 767px) {
+          .animate-scroll-x {
+            animation-duration: 15s; /* 모바일에서 적당히 느린 애니메이션 */
+          }
+        }
+
+        @media (max-width: 400px) {
+          .animate-scroll-x {
+            animation-duration: 18s; /* 매우 좁은 화면에서 더 느린 애니메이션 */
           }
         }
       `}</style>

@@ -1,5 +1,4 @@
 "use client"
-import Image from "next/image"
 import React, { useState } from "react"
 
 const CptComparison: React.FC = () => {
@@ -43,48 +42,43 @@ const CptComparison: React.FC = () => {
   }
 
   return (
-    <section className="max-w-6xl mx-auto pt-32 bg-white">
+    <section className="max-w-6xl mx-auto pt-16 md:pt-32 bg-white px-4">
       {/* 제목 섹션 */}
-      <div className="relative mb-12 text-center">
-        <h1 className="text-4xl font-bold text-gray-900 mb-4 relative z-10">
-          다른 CPT와의
-          <br />
-          차이점은 무엇인가요?
+      <div className="relative mb-8 md:mb-12 text-center">
+        <h1 className="text-2xl md:text-4xl font-bold text-gray-900 mb-4 relative z-10">
+          다른 CPT와의 차이점?
         </h1>
         <div className="w-full max-w-md mx-auto h-1 bg-red-400 rounded-full"></div>
       </div>
 
       {/* 비교 컨텐츠 */}
       <div className="relative">
-        {/* 좌측 화살표 */}
+        {/* 데스크탑 화살표 */}
         <button
           onClick={prevSlide}
-          className="absolute left-4 top-1/2 transform -translate-y-1/2 z-10 w-12 h-12 bg-gray-300 hover:bg-gray-400 flex items-center justify-center transition-colors rounded-lg"
+          className="hidden md:block absolute left-4 top-1/2 transform -translate-y-1/2 z-10 w-12 h-12 bg-gray-300 hover:bg-gray-400 flex items-center justify-center transition-colors rounded-lg"
           style={{ clipPath: "polygon(25% 50%, 75% 20%, 75% 80%)" }}
         ></button>
 
-        {/* 우측 화살표 */}
         <button
           onClick={nextSlide}
-          className="absolute right-4 top-1/2 transform -translate-y-1/2 z-10 w-12 h-12 bg-gray-300 hover:bg-gray-400 flex items-center justify-center transition-colors rounded-lg"
+          className="hidden md:block absolute right-4 top-1/2 transform -translate-y-1/2 z-10 w-12 h-12 bg-gray-300 hover:bg-gray-400 flex items-center justify-center transition-colors rounded-lg"
           style={{ clipPath: "polygon(25% 20%, 25% 80%, 75% 50%)" }}
         ></button>
 
         {/* 메인 콘텐츠 */}
-        <div className="mx-24 min-h-96">
-          <div className="grid grid-cols-2 gap-16 items-start">
+        <div className="md:mx-24">
+          {/* 데스크탑 레이아웃 */}
+          <div className="hidden md:grid grid-cols-2 gap-16 items-start min-h-96">
             {/* 왼쪽 - 다른 기관 */}
             <div className="text-center">
-              <div
-                className="mb-6 flex items-center justify-center"
-                style={{ height: "70px" }}
-              >
-                <Image
+              <div className="mb-6 flex items-center justify-center h-16">
+                <img
                   src={comparisons[currentSlide].leftOrg}
                   width={125}
                   height={70}
                   alt="Comparison image"
-                  style={{ objectFit: "contain" }}
+                  className="max-h-16 object-contain"
                 />
               </div>
 
@@ -101,16 +95,13 @@ const CptComparison: React.FC = () => {
 
             {/* 오른쪽 - ACE */}
             <div className="text-center">
-              <div
-                className="mb-6 flex items-center justify-center"
-                style={{ height: "70px" }}
-              >
-                <Image
+              <div className="mb-6 flex items-center justify-center h-16">
+                <img
                   src="/images/ace_logo.png"
                   width={125}
                   height={70}
                   alt="Comparison image"
-                  style={{ objectFit: "contain" }}
+                  className="max-h-16 object-contain"
                 />
               </div>
 
@@ -122,15 +113,85 @@ const CptComparison: React.FC = () => {
                 {comparisons[currentSlide].rightDescription}
               </p>
             </div>
+
+            {/* 가운데 세로 구분선 */}
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-px h-48 bg-gray-200"></div>
           </div>
 
-          {/* 가운데 세로 구분선 */}
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-px h-48 bg-gray-200"></div>
+          {/* 모바일 레이아웃 */}
+          <div className="md:hidden space-y-6">
+            {/* 다른 기관 */}
+            <div className="bg-gray-50 rounded-lg p-4">
+              <div className="text-center mb-4">
+                <div className="mb-3 flex items-center justify-center h-12">
+                  <img
+                    src={comparisons[currentSlide].leftOrg}
+                    width={100}
+                    height={50}
+                    alt="Comparison image"
+                    className="max-h-12 object-contain"
+                  />
+                </div>
+                <div className="bg-gray-100 rounded-full px-4 py-2 inline-block mb-3">
+                  <span className="text-gray-700 font-medium text-sm">
+                    {comparisons[currentSlide].leftTitle}
+                  </span>
+                </div>
+              </div>
+              <p className="text-gray-700 text-sm leading-relaxed text-center">
+                {comparisons[currentSlide].leftDescription}
+              </p>
+            </div>
+
+            {/* VS 구분선 */}
+            <div className="flex items-center justify-center">
+              <div className="flex-1 h-px bg-gray-300"></div>
+              <span className="px-4 text-gray-500 font-semibold">VS</span>
+              <div className="flex-1 h-px bg-gray-300"></div>
+            </div>
+
+            {/* ACE */}
+            <div className="bg-yellow-50 rounded-lg p-4">
+              <div className="text-center mb-4">
+                <div className="mb-3 flex items-center justify-center h-12">
+                  <img
+                    src="/images/ace_logo.png"
+                    width={100}
+                    height={50}
+                    alt="ACE logo"
+                    className="max-h-12 object-contain"
+                  />
+                </div>
+                <div className="bg-yellow-400 rounded-full px-4 py-2 inline-block mb-3">
+                  <span className="text-gray-800 font-medium text-sm">
+                    ACE CPT
+                  </span>
+                </div>
+              </div>
+              <p className="text-gray-700 text-sm leading-relaxed text-center">
+                {comparisons[currentSlide].rightDescription}
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
+      {/* 모바일 화살표 버튼 */}
+      <div className="md:hidden flex justify-center mt-6 space-x-4">
+        <button
+          onClick={prevSlide}
+          className="w-10 h-10 bg-gray-300 hover:bg-gray-400 flex items-center justify-center transition-colors rounded-lg"
+          style={{ clipPath: "polygon(25% 50%, 75% 20%, 75% 80%)" }}
+        ></button>
+        <button
+          onClick={nextSlide}
+          className="w-10 h-10 bg-gray-300 hover:bg-gray-400 flex items-center justify-center transition-colors rounded-lg"
+          style={{ clipPath: "polygon(25% 20%, 25% 80%, 75% 50%)" }}
+        ></button>
+      </div>
+
       {/* 인디케이터 */}
-      <div className="flex justify-center mt-8 space-x-2">
+      <div className="flex justify-center mt-6 md:mt-8 space-x-2">
         {comparisons.map((_, index) => (
           <button
             key={index}
@@ -143,8 +204,8 @@ const CptComparison: React.FC = () => {
       </div>
 
       {/* 신청하기 버튼 */}
-      <div className="text-center mt-12">
-        <button className="bg-red-500 hover:bg-red-600 text-white font-bold py-4 px-12 rounded-full text-lg transition-colors duration-300 shadow-lg hover:shadow-xl">
+      <div className="text-center mt-8 md:mt-12">
+        <button className="bg-red-500 hover:bg-red-600 text-white font-bold py-3 md:py-4 px-8 md:px-12 rounded-full text-base md:text-lg transition-colors duration-300 shadow-lg hover:shadow-xl">
           신청하기
         </button>
       </div>

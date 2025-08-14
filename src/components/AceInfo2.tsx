@@ -8,7 +8,7 @@ const AceInfo2: React.FC = () => {
         {/* ACE CPT 제목 */}
         <div className="relative mb-12">
           <h1 className="text-4xl font-bold text-gray-900 mb-4 relative z-10 text-center">
-            ACE CPT는 무엇이 특별한가요?
+            ACE CPT의 특별함?
           </h1>
           <div className="w-full max-w-md mx-auto h-1 bg-red-400 rounded-full"></div>
         </div>
@@ -18,34 +18,36 @@ const AceInfo2: React.FC = () => {
           {/* 첫 번째 특징 */}
           <div className="bg-white rounded-lg p-6">
             <div className="bg-red-500 text-white px-4 py-2 rounded-md inline-block mb-4 font-bold">
-              1. 전 세계 어디에서나 인정받을 수 있는 퍼스널 트레이너 자격증
+              1. 전 세계 어디서나 인정받을 수 있습니다.
             </div>
             <p className="text-gray-700 text-lg leading-relaxed">
-              - 미국 국가자격인증위원회(National Commission for Certifying
-              Agencies)가 인증하는 순수한 자격 인증 프로그램
+              - 미국 국가자격인증 위원회(National Commission for Certifying
+              Agencies)가 인증하는 자격 인증 프로그램입니다. 국제적으로 인증
+              받아 국내, 국외에서 전부 사용 가능합니다.
             </p>
           </div>
 
           {/* 두 번째 특징 */}
           <div className="bg-white rounded-lg p-6">
             <div className="bg-red-500 text-white px-4 py-2 rounded-md inline-block mb-4 font-bold">
-              2. 가장 광범위하게 인정받는 프로그램
+              2. 모든 고객 수준에 맞춤 솔루션이 가능합니다.
             </div>
             <p className="text-gray-700 text-lg leading-relaxed">
-              - 특정 분야나 고객층에 초점을 맞추지 않고 초심자부터 선수까지 모두
-              다룰 수 있는 프로그램으로 실전에서 바로 활용 가능한 실무 중심의
-              커리큘럼으로 구성
+              - 특정 분야나 고객 층에 초점을 맞추지 않고 초심자부터 선수가지
+              모두 다룰 수 있는 프로그램입니다. 실전에서 바로 활용 가능한 실무
+              중심의 커리큘럼으로 구성되어있습니다.
             </p>
           </div>
 
           {/* 세 번째 특징 */}
           <div className="bg-white rounded-lg p-6">
             <div className="bg-red-500 text-white px-4 py-2 rounded-md inline-block mb-4 font-bold">
-              3. 고객의 행동을 변화시키는 행동심리학 관점
+              3. 고객의 행동을 변화시킬 수 있습니다.
             </div>
             <p className="text-gray-700 text-lg leading-relaxed">
               - 해부/생리/역학 등 일반 내용은 물론 고객을 실제로 변화시키기 위한
-              커뮤니케이션, 행동-인지 변화 등 라이프 스타일 코치 역할에 초점
+              커뮤니케이션 능력을 학습하여 행동과 인지를 변화 시키는 등의 라이프
+              스타일 코치 역할을 할 수 있게 합니다.
             </p>
           </div>
         </div>

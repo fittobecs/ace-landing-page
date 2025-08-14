@@ -7,10 +7,10 @@ const AceInfo2: React.FC = () => {
       <div className="mt-20">
         {/* ACE CPT 제목 */}
         <div className="relative mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4 relative z-10">
+          <h1 className="text-4xl font-bold text-gray-900 mb-4 relative z-10 text-center">
             ACE CPT는 무엇이 특별한가요?
           </h1>
-          <div className="w-full h-1 bg-red-400 rounded-full"></div>
+          <div className="w-full max-w-md mx-auto h-1 bg-red-400 rounded-full"></div>
         </div>
 
         {/* ACE CPT 특징들 */}

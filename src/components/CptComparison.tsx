@@ -1,4 +1,5 @@
 "use client"
+import Image from "next/image"
 import React, { useState } from "react"
 
 const CptComparison: React.FC = () => {
@@ -6,7 +7,7 @@ const CptComparison: React.FC = () => {
 
   const comparisons = [
     {
-      leftOrg: "NASM",
+      leftOrg: "/images/nasm_logo.png",
       leftTitle: "NASM CPT",
       leftDescription:
         "NASM(National Academy of Sports Medicine)은 부상 예방, 교정운동, 기능성 훈련에 초점에 맞추고 있다.",
@@ -14,7 +15,7 @@ const CptComparison: React.FC = () => {
         "ACE는 Integrated Functionality Training(IF-T) 모델을 통해 고객의 현재 능력과 목적에 맞춰 프로그램을 통적으로 조정하는데 중점을 두고 있다.",
     },
     {
-      leftOrg: "ACSM",
+      leftOrg: "/images/acsm_logo.png",
       leftTitle: "ACSM CPT",
       leftDescription:
         "ACSM은 주로 임상 환자, 고위험군, 대사 질환자, 심혈관 질환자 등 특수 집단을 대상으로 한 운동 처방에 중점을 두고 있다.",
@@ -22,7 +23,7 @@ const CptComparison: React.FC = () => {
         "ACE CPT는 일반인의 일상 습관 개선, 비만 예방, 웰빙 코칭에 특화되어 있어 커뮤니티, 기업, 의료기관 등 다양한 현장에서 넓은 응용 가능성을 갖고 있다.",
     },
     {
-      leftOrg: "NSCA",
+      leftOrg: "/images/nsca_logo.jpg",
       leftTitle: "NSCA CPT",
       leftDescription:
         "NSCA의 CSCS 자격은 주로 운동선수의 퍼포먼스 향상과 고강도 훈련에만 특화되어있다.",
@@ -74,10 +75,17 @@ const CptComparison: React.FC = () => {
           <div className="grid grid-cols-2 gap-16 items-start">
             {/* 왼쪽 - 다른 기관 */}
             <div className="text-center">
-              <div className="mb-6">
-                <h2 className="text-4xl font-bold text-blue-600 mb-4">
-                  {comparisons[currentSlide].leftOrg}
-                </h2>
+              <div
+                className="mb-6 flex items-center justify-center"
+                style={{ height: "70px" }}
+              >
+                <Image
+                  src={comparisons[currentSlide].leftOrg}
+                  width={125}
+                  height={70}
+                  alt="Comparison image"
+                  style={{ objectFit: "contain" }}
+                />
               </div>
 
               <div className="bg-gray-100 rounded-full px-6 py-3 inline-block mb-8">
@@ -93,8 +101,17 @@ const CptComparison: React.FC = () => {
 
             {/* 오른쪽 - ACE */}
             <div className="text-center">
-              <div className="mb-6">
-                <h2 className="text-4xl font-bold text-red-500 mb-4">ACE →</h2>
+              <div
+                className="mb-6 flex items-center justify-center"
+                style={{ height: "70px" }}
+              >
+                <Image
+                  src="/images/ace_logo.png"
+                  width={125}
+                  height={70}
+                  alt="Comparison image"
+                  style={{ objectFit: "contain" }}
+                />
               </div>
 
               <div className="bg-yellow-400 rounded-full px-6 py-3 inline-block mb-8">

@@ -24,7 +24,8 @@ const FAQ: React.FC = () => {
             Ask us anything!
           </p>
           <a
-            href="mailto:"
+            href="https://pf.kakao.com/_dGnxgxj/chat"
+            target="_blank"
             className="mt-3 block text-xl lg:text-4xl text-[#e2363e] font-semibold hover:underline text-center lg:text-left"
           >
             카카오톡 문의 바로보기

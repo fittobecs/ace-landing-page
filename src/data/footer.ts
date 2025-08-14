@@ -1,37 +1,26 @@
-import { IMenuItem, ISocials } from "@/types";
+import { IMenuItem, ISocials } from "@/types"
 
 export const footerDetails: {
-    subheading: string;
-    quickLinks: IMenuItem[];
-    email: string;
-    telephone: string;
-    socials: ISocials;
+  subheading: string
+  quickLinks: IMenuItem[]
+  email: string
+  telephone: string
+  socials: ISocials
 } = {
-    subheading: "Empowering businesses with cutting-edge financial technology solutions.",
-    quickLinks: [
-        {
-            text: "Features",
-            url: "#features"
-        },
-        {
-            text: "Pricing",
-            url: "#pricing"
-        },
-        {
-            text: "Testimonials",
-            url: "#testimonials"
-        }
-    ],
-    email: 'address@yoursite.com',
-    telephone: '+1 (123) 456-7890',
-    socials: {
-        // github: 'https://github.com',
-        // x: 'https://twitter.com/x',
-        twitter: 'https://twitter.com/Twitter',
-        facebook: 'https://facebook.com',
-        // youtube: 'https://youtube.com',
-        linkedin: 'https://www.linkedin.com',
-        // threads: 'https://www.threads.net',
-        instagram: 'https://www.instagram.com',
-    }
+  subheading:
+    "미국운동협의회(ACE: American Council on Exercise)가 제공하는 세계적으로 인정받는 퍼스널 트레이너 자격인증 프로그램을(Certified Personal Trainer) 취득하여 전 세계 90,000명 이상의 전문가들과 함께하세요.",
+  quickLinks: [
+    {
+      text: "Features",
+      url: "#features",
+    },
+  ],
+  email: "fmskorea@fittobe.com",
+  telephone: "070-4632-3651",
+  socials: {
+    youtube: "https://www.youtube.com/@FMS_KOREA",
+    instagram: "https://www.instagram.com/fmskorea/",
+    blog: "https://facebook.com",
+    linkedin: "https://www.linkedin.com",
+  },
 }

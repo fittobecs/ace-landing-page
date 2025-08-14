@@ -137,7 +137,7 @@ const ImageBlocks: React.FC = () => {
                 <p className="mt-1">
                   혹은 CEU(Continuing Education Unit)을 의미하며,
                 </p>
-                <p className="mt-1">펫트너 아카데미에서 신청 가능합니다.</p>
+                <p className="mt-1">핏투비 아카데미에서 신청 가능합니다.</p>
               </div>
             </div>
           </div>

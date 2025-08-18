@@ -5,6 +5,7 @@ import Link from "next/link"
 import React, { useState } from "react"
 import { HiBars3, HiOutlineXMark } from "react-icons/hi2"
 
+import { REQUEST_URL } from "@/data/constant"
 import { menuItems } from "@/data/menuItems"
 import Container from "./Container"
 
@@ -13,6 +14,10 @@ const Header: React.FC = () => {
 
   const toggleMenu = () => {
     setIsOpen(!isOpen)
+  }
+
+  const handleClick = () => {
+    window.open(REQUEST_URL, "_blank", "noopener,noreferrer")
   }
 
   return (
@@ -52,12 +57,13 @@ const Header: React.FC = () => {
               </a>
             </li>
             <li>
-              <Link
-                href="#cta"
+              <a
+                href={REQUEST_URL}
+                target="_blank"
                 className="text-black bg-white border-2 border-[#e2363e] hover:bg-gray-100 px-8 py-3 rounded-full transition-colors"
               >
                 <span className="font-semibold">ACE 신청</span>
-              </Link>
+              </a>
             </li>
           </ul>
 
@@ -114,12 +120,13 @@ const Header: React.FC = () => {
               </a>
             </li>
             <li>
-              <Link
-                href="#cta"
+              <a
+                href={REQUEST_URL}
+                target="_blank"
                 className="text-black bg-white border-2 border-[#e2363e] hover:bg-gray-100 px-8 py-2 rounded-full transition-colors"
               >
                 <span className="font-semibold">ACE 신청</span>
-              </Link>
+              </a>
             </li>
           </ul>
         </div>

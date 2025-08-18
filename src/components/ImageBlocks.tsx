@@ -1,6 +1,12 @@
+"use client"
+import { REQUEST_URL } from "@/data/constant"
 import React from "react"
 
 const ImageBlocks: React.FC = () => {
+  const handleClick = () => {
+    window.open(REQUEST_URL, "_blank", "noopener,noreferrer")
+  }
+
   return (
     <section className="max-w-4xl mx-auto pt-32 bg-white">
       <div className="space-y-16">
@@ -151,7 +157,11 @@ const ImageBlocks: React.FC = () => {
         {/* 신청 버튼 */}
         <div className="flow-root">
           <div className="text-center py-8">
-            <button className="bg-red-500 hover:bg-red-600 text-white font-bold py-4 px-12 rounded-full text-lg transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
+            <button
+              className="bg-red-500 hover:bg-red-600 text-white font-bold py-4 px-12 rounded-full text-lg 
+            transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+              onClick={handleClick}
+            >
               ACE CPT 신청하기
             </button>
           </div>

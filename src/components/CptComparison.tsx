@@ -1,4 +1,5 @@
 "use client"
+import { REQUEST_URL } from "@/data/constant"
 import React, { useState } from "react"
 
 const CptComparison: React.FC = () => {
@@ -39,6 +40,10 @@ const CptComparison: React.FC = () => {
     setCurrentSlide(
       (prev) => (prev - 1 + comparisons.length) % comparisons.length
     )
+  }
+
+  const handleClick = () => {
+    window.open(REQUEST_URL, "_blank", "noopener,noreferrer")
   }
 
   return (
@@ -205,7 +210,11 @@ const CptComparison: React.FC = () => {
 
       {/* 신청하기 버튼 */}
       <div className="text-center mt-8 md:mt-12">
-        <button className="bg-red-500 hover:bg-red-600 text-white font-bold py-3 md:py-4 px-8 md:px-12 rounded-full text-base md:text-lg transition-colors duration-300 shadow-lg hover:shadow-xl">
+        <button
+          className="bg-red-500 hover:bg-red-600 text-white font-bold py-3 md:py-4 px-8 md:px-12 
+        rounded-full text-base md:text-lg transition-colors duration-300 shadow-lg hover:shadow-xl"
+          onClick={handleClick}
+        >
           신청하기
         </button>
       </div>

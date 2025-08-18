@@ -2,19 +2,19 @@ import React from "react"
 
 const Certificate: React.FC = () => {
   const leftCareers = [
-    "Virtual Coach/Online Trainer",
-    "Athletic Coach",
-    "Fitness Director",
-    "Gym Owner/Self-Employed",
-    "Corrective Exercise & Injury Prevention Specialist",
+    "온라인 코치/트레이너",
+    "운동 코치",
+    "그룹, 개인 트레이너",
+    "체육관 관장/자영업자",
+    "교정 운동 및 부상 예방 전문가",
   ]
 
   const rightCareers = [
-    "Gym/Health Club",
-    "Fitness Studio",
-    "Healthcare/Outpatient Clinic",
-    "Community Center",
-    "University/Campus",
+    "헬스장/헬스클럽",
+    "피트니스 스튜디오",
+    "의료, 외래 진료소",
+    "커뮤니티 센터",
+    "대학교/캠퍼스",
   ]
   return (
     <section className="max-w-7xl mx-auto pt-16 md:pt-32 bg-white px-4">

@@ -1,5 +1,7 @@
 "use client"
 
+import { DVRT_L1_URL, NORMAL_LOG_URL } from "@/data/constant"
+import Image from "next/image"
 import React from "react"
 
 const Logos: React.FC = () => {
@@ -7,32 +9,37 @@ const Logos: React.FC = () => {
     {
       id: "fms-l1",
       name: "FMS L1",
-      url: "/certifications/fms-l1",
+      url: NORMAL_LOG_URL,
       logo: "FMS L1",
+      img: "/images/FMS L1.png",
     },
     {
       id: "fms-l2",
       name: "FMS L2",
-      url: "/certifications/fms-l2",
+      url: NORMAL_LOG_URL,
       logo: "FMS L2",
+      img: "/images/FMS L2.png",
     },
     {
-      id: "sfma",
-      name: "SFMA",
-      url: "/certifications/sfma",
-      logo: "SFMA",
+      id: "fms-breathing",
+      name: "FMS Breathing",
+      url: NORMAL_LOG_URL,
+      logo: "fms-breathing",
+      img: "/images/FMS Breathing.png",
+    },
+    {
+      id: "fcs",
+      name: "FCS",
+      url: NORMAL_LOG_URL,
+      logo: "FCS",
+      img: "/images/FCS.png",
     },
     {
       id: "dvrt-l1",
       name: "DVRT L1",
-      url: "/certifications/dvrt-l1",
+      url: DVRT_L1_URL,
       logo: "DVRT L1",
-    },
-    {
-      id: "dvrt-l2",
-      name: "DVRT L2",
-      url: "/certifications/dvrt-l2",
-      logo: "DVRT L2",
+      img: "/images/DVRT L1.png",
     },
   ]
 
@@ -55,13 +62,23 @@ const Logos: React.FC = () => {
               {certifications.map((cert) => (
                 <div
                   key={`first-${cert.id}`}
-                  className="flex-shrink-0 mx-8 max-md:mx-3 max-md:w-[16vw] max-md:min-w-[80px] w-40 cursor-pointer transform transition-transform duration-300 hover:scale-110"
+                  className="flex-shrink-0 mx-8 w-40 transform transition-transform duration-300 hover:scale-110"
                 >
-                  <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-8 h-24 flex items-center justify-center border border-gray-200">
-                    <span className="text-gray-600 font-medium text-center text-sm pt-4">
-                      {cert.logo}
-                    </span>
-                  </div>
+                  <a
+                    href={cert.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`${cert.name} 페이지로 이동`}
+                    className="block bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-8 h-24 flex items-center justify-center border border-gray-200"
+                  >
+                    <Image
+                      src={cert.img}
+                      width={160}
+                      height={96}
+                      alt={cert.name}
+                      className="max-w-full h-auto mt-4"
+                    />
+                  </a>
                 </div>
               ))}
             </div>
@@ -71,13 +88,23 @@ const Logos: React.FC = () => {
               {certifications.map((cert) => (
                 <div
                   key={`second-${cert.id}`}
-                  className="flex-shrink-0 mx-8 max-md:mx-3 max-md:w-[16vw] max-md:min-w-[80px] w-40 cursor-pointer transform transition-transform duration-300 hover:scale-110"
+                  className="flex-shrink-0 mx-8 w-40 transform transition-transform duration-300 hover:scale-110"
                 >
-                  <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-8 h-24 flex items-center justify-center border border-gray-200">
-                    <span className="text-gray-600 font-medium text-center text-sm pt-4">
-                      {cert.logo}
-                    </span>
-                  </div>
+                  <a
+                    href={cert.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`${cert.name} 페이지로 이동`}
+                    className="block bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-8 h-24 flex items-center justify-center border border-gray-200"
+                  >
+                    <Image
+                      src={cert.img}
+                      width={160}
+                      height={96}
+                      alt={cert.name}
+                      className="max-w-full h-auto mt-4"
+                    />
+                  </a>
                 </div>
               ))}
             </div>
@@ -88,8 +115,6 @@ const Logos: React.FC = () => {
       {/* 설명 텍스트 */}
       <div className="text-center mt-8">
         <p className="text-gray-600 text-sm max-w-3xl mx-auto">
-          ACE(American Council on Exercise)가 공식 인정하는 지속교육 과정입니다.
-          각 과정을 통해 전문성을 향상시키고 자격증을 유지하세요.
           핏투비아카데미에서 FMS아카데미 구입 시 FMS L1, L2, FCS, Breathing을
           포함한 자격 과정을 145만원에 1년간 무제한 수강 가능합니다.
         </p>

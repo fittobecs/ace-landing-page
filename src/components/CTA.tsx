@@ -1,6 +1,12 @@
+"use client"
+import { REQUEST_URL } from "@/data/constant"
 import { ctaDetails } from "@/data/cta"
 
 const CTA: React.FC = () => {
+  const handleClick = () => {
+    window.open(REQUEST_URL, "_blank", "noopener,noreferrer")
+  }
+
   return (
     <section id="cta" className="mt-10 mb-5 lg:my-20">
       <div className="relative h-full w-full z-10 mx-auto py-12 sm:py-20">
@@ -10,7 +16,7 @@ const CTA: React.FC = () => {
           </div>
 
           <div className="h-full flex flex-col items-center justify-center text-white text-center px-5">
-            <h2 className="text-2xl sm:text-3xl md:text-5xl md:leading-tight font-semibold mb-4 max-w-2xl">
+            <h2 className="text-xl sm:text-3xl md:text-4xl md:leading-tight font-semibold mb-4 max-w-2xl">
               {ctaDetails.heading}
             </h2>
 
@@ -18,10 +24,16 @@ const CTA: React.FC = () => {
             <p className="mx-auto max-w-xl md:px-5">{ctaDetails.subheading2}</p>
 
             <div className="mt-4 inline-flex items-center gap-4 sm:gap-14">
-              <button className="bg-white hover:bg-gray-200 text-black font-bold py-2 px-6 rounded-full text-sm sm:text-base">
+              <button
+                className="bg-white hover:bg-gray-200 text-black font-bold py-2 px-6 rounded-full text-sm sm:text-base"
+                onClick={handleClick}
+              >
                 ACE 신청하기
               </button>
-              <button className="bg-white hover:bg-gray-200 text-black font-bold py-2 px-6 rounded-full text-sm sm:text-base">
+              <button
+                className="bg-white hover:bg-gray-200 text-black font-bold py-2 px-6 rounded-full text-sm sm:text-base"
+                onClick={handleClick}
+              >
                 상세 페이지
               </button>
             </div>

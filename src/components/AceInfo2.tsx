@@ -1,6 +1,12 @@
+"use client"
+
+import { REQUEST_URL } from "@/data/constant"
 import React from "react"
 
 const AceInfo2: React.FC = () => {
+  const handleClick = () => {
+    window.open(REQUEST_URL, "_blank", "noopener,noreferrer")
+  }
   return (
     <section id="AceArticle2" className="max-w-4xl mx-auto pt-24 bg-white">
       {/* ACE CPT 섹션 */}
@@ -54,7 +60,11 @@ const AceInfo2: React.FC = () => {
 
         {/* 두 번째 섹션 신청하기 버튼 */}
         <div className="text-center mt-12">
-          <button className="bg-red-500 hover:bg-red-600 text-white font-bold py-4 px-12 rounded-full text-lg transition-colors duration-300 shadow-lg hover:shadow-xl">
+          <button
+            className="bg-red-500 hover:bg-red-600 text-white font-bold py-4 px-12 rounded-full text-lg 
+          transition-colors duration-300 shadow-lg hover:shadow-xl"
+            onClick={handleClick}
+          >
             신청하기
           </button>
         </div>

@@ -1,6 +1,7 @@
 import clsx from "clsx"
 import { BsFillCheckCircleFill } from "react-icons/bs"
 
+import { REQUEST_URL } from "@/data/constant"
 import { IPricing } from "@/types"
 
 interface Props {
@@ -28,14 +29,19 @@ const PricingColumn: React.FC<Props> = ({ tier, highlight }: Props) => {
             <span className="text-lg font-normal text-gray-600">/mo</span>
           )}
         </p>
-        <button
-          className={clsx("w-full py-3 px-4 rounded-full transition-colors", {
-            "bg-primary hover:bg-primary-accent": highlight,
-            "bg-hero-background hover:bg-gray-200": !highlight,
-          })}
+        <a
+          target="_blank"
+          href={REQUEST_URL}
+          className={clsx(
+            "block w-full py-3 px-4 rounded-full text-center font-semibold transition-colors",
+            {
+              "bg-primary hover:bg-primary-accent": highlight,
+              "bg-hero-background hover:bg-gray-200": !highlight,
+            }
+          )}
         >
           신청하기
-        </button>
+        </a>
       </div>
       <div className="p-6 mt-1">
         {/* <p className="font-bold mb-0">FEATURES</p>

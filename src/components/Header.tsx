@@ -16,10 +16,6 @@ const Header: React.FC = () => {
     setIsOpen(!isOpen)
   }
 
-  const handleClick = () => {
-    window.open(REQUEST_URL, "_blank", "noopener,noreferrer")
-  }
-
   return (
     <header className="bg-transparent fixed top-0 left-0 right-0 md:absolute z-50 mx-auto w-full">
       <Container className="!px-0">

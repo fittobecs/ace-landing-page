@@ -14,11 +14,11 @@ const Logos: React.FC = () => {
       img: "/images/FMS L1.png",
     },
     {
-      id: "fms-l2",
-      name: "FMS L2",
-      url: NORMAL_LOG_URL,
-      logo: "FMS L2",
-      img: "/images/FMS L2.png",
+      id: "dvrt-l1",
+      name: "DVRT L1",
+      url: DVRT_L1_URL,
+      logo: "DVRT L1",
+      img: "/images/DVRT L1.png",
     },
     {
       id: "fms-breathing",
@@ -28,18 +28,18 @@ const Logos: React.FC = () => {
       img: "/images/FMS Breathing.png",
     },
     {
+      id: "fms-l2",
+      name: "FMS L2",
+      url: NORMAL_LOG_URL,
+      logo: "FMS L2",
+      img: "/images/FMS L2.png",
+    },
+    {
       id: "fcs",
       name: "FCS",
       url: NORMAL_LOG_URL,
       logo: "FCS",
       img: "/images/FCS.png",
-    },
-    {
-      id: "dvrt-l1",
-      name: "DVRT L1",
-      url: DVRT_L1_URL,
-      logo: "DVRT L1",
-      img: "/images/DVRT L1.png",
     },
   ]
 
@@ -147,13 +147,13 @@ const Logos: React.FC = () => {
 
         @media (max-width: 767px) {
           .animate-scroll-x {
-            animation-duration: 15s; /* 모바일에서 적당히 느린 애니메이션 */
+            animation-duration: 10s; /* 모바일에서 더 빠른 애니메이션 */
           }
         }
 
         @media (max-width: 400px) {
           .animate-scroll-x {
-            animation-duration: 18s; /* 매우 좁은 화면에서 더 느린 애니메이션 */
+            animation-duration: 12s; /* 매우 좁은 화면에서 빠른 애니메이션 */
           }
         }
       `}</style>

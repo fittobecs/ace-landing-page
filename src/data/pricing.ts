@@ -1,37 +1,23 @@
-import { IPricing } from "@/types";
+import { IPricing } from "@/types"
 
 export const tiers: IPricing[] = [
-    {
-        name: 'Starter',
-        price: 29,
-        features: [
-            'Basic cloud integration',
-            'Up to 5 team members',
-            '20GB storage',
-            'Email support',
-        ],
-    },
-    {
-        name: 'Pro',
-        price: 99,
-        features: [
-            'Advanced cloud integration',
-            'Up to 20 team members',
-            '100GB storage',
-            'Priority email & phone support',
-            'Advanced analytics',
-        ],
-    },
-    {
-        name: 'Enterprise',
-        price: 'Custom',
-        features: [
-            'Full cloud integration',
-            'Unlimited team members',
-            'Unlimited storage',
-            '24/7 dedicated support',
-            'Custom solutions',
-            'On-site training',
-        ],
-    },
+  {
+    name: "시험 + 교재",
+    price: "860,000원",
+    features: [],
+  },
+  {
+    name: "시험 + 교재 + 연수",
+    price: "990,000원",
+    features: ["연수 과정(줌 실시간)은 개별 상품과 동일"],
+  },
+  {
+    name: "연수",
+    price: "300,000원",
+    features: [
+      "연수 과정 4주 진행 - 회당 1.5시간, 총 6시간",
+      "시험 + 교재를 구매한 사람만 구매 가능",
+      "교재 제공은 별도로 되지 않음",
+    ],
+  },
 ]

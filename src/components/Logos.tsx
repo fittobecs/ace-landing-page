@@ -58,7 +58,7 @@ const Logos: React.FC = () => {
                   className="flex-shrink-0 mx-8 max-md:mx-3 max-md:w-[16vw] max-md:min-w-[80px] w-40 cursor-pointer transform transition-transform duration-300 hover:scale-110"
                 >
                   <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-8 h-24 flex items-center justify-center border border-gray-200">
-                    <span className="text-gray-600 font-medium text-center text-sm">
+                    <span className="text-gray-600 font-medium text-center text-sm pt-4">
                       {cert.logo}
                     </span>
                   </div>
@@ -74,7 +74,7 @@ const Logos: React.FC = () => {
                   className="flex-shrink-0 mx-8 max-md:mx-3 max-md:w-[16vw] max-md:min-w-[80px] w-40 cursor-pointer transform transition-transform duration-300 hover:scale-110"
                 >
                   <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-8 h-24 flex items-center justify-center border border-gray-200">
-                    <span className="text-gray-600 font-medium text-center text-sm">
+                    <span className="text-gray-600 font-medium text-center text-sm pt-4">
                       {cert.logo}
                     </span>
                   </div>
@@ -90,6 +90,8 @@ const Logos: React.FC = () => {
         <p className="text-gray-600 text-sm max-w-3xl mx-auto">
           ACE(American Council on Exercise)가 공식 인정하는 지속교육 과정입니다.
           각 과정을 통해 전문성을 향상시키고 자격증을 유지하세요.
+          핏투비아카데미에서 FMS아카데미 구입 시 FMS L1, L2, FCS, Breathing을
+          포함한 자격 과정을 145만원에 1년간 무제한 수강 가능합니다.
         </p>
       </div>
 

@@ -17,18 +17,18 @@ const FAQ: React.FC = () => {
           <p className="hidden lg:block text-foreground-accent">FAQ&apos;S</p>
           <SectionTitle>
             <h2 className="my-3 !leading-snug lg:max-w-sm text-center lg:text-left">
-              Frequently Asked Questions
+              자주 묻는 질문(FAQ)
             </h2>
           </SectionTitle>
           <p className="lg:mt-10 text-foreground-accent text-center lg:text-left">
-            Ask us anything!
+            문의 사항은 카카오톡으로 부탁드립니다.
           </p>
           <a
             href="https://pf.kakao.com/_dGnxgxj/chat"
             target="_blank"
             className="mt-3 block text-xl lg:text-4xl text-[#e2363e] font-semibold hover:underline text-center lg:text-left"
           >
-            카카오톡 문의 바로보기
+            카카오톡 문의 바로가기
           </a>
         </div>
 
@@ -57,6 +57,16 @@ const FAQ: React.FC = () => {
             </div>
           ))}
         </div>
+      </div>
+      <div className="mt-5 text-center">
+        <a
+          href="https://www.fittobe.ac/board/index.jsp?code=faq"
+          target="_blank"
+          className="inline-flex items-center text-lg text-[#e2363e] font-semibold hover:underline"
+        >
+          <BiPlus className="w-5 h-5 mr-2" />
+          더보기
+        </a>
       </div>
     </section>
   )

@@ -6,7 +6,7 @@ const CTA: React.FC = () => {
       <div className="relative h-full w-full z-10 mx-auto py-12 sm:py-20">
         <div className="h-full w-full">
           <div className="rounded-3xl opacity-95 absolute inset-0 -z-10 h-full w-full bg-[#e2363e] bg-[size:6rem_4rem]">
-            <div className="rounded-3xl absolute bottom-0 left-0 right-0 top-0 "></div>
+            <div className="rounded-3xl absolute bottom-0 left-0 right-0 top-0"></div>
           </div>
 
           <div className="h-full flex flex-col items-center justify-center text-white text-center px-5">
@@ -14,13 +14,14 @@ const CTA: React.FC = () => {
               {ctaDetails.heading}
             </h2>
 
-            <p className="mx-auto max-w-xl md:px-5">{ctaDetails.subheading}</p>
+            <p className="mx-auto max-w-xl md:px-5">{ctaDetails.subheading1}</p>
+            <p className="mx-auto max-w-xl md:px-5">{ctaDetails.subheading2}</p>
 
-            <div className="mt-4 flex flex-col sm:flex-row items-center sm:gap-14">
-              <button className="bg-white hover:bg-gray-200 text-black font-bold py-2 px-8 rounded-full">
+            <div className="mt-4 inline-flex items-center gap-4 sm:gap-14">
+              <button className="bg-white hover:bg-gray-200 text-black font-bold py-2 px-6 rounded-full text-sm sm:text-base">
                 ACE 신청하기
               </button>
-              <button className="bg-white hover:bg-gray-200 text-black font-bold py-2 px-8 rounded-full">
+              <button className="bg-white hover:bg-gray-200 text-black font-bold py-2 px-6 rounded-full text-sm sm:text-base">
                 상세 페이지
               </button>
             </div>

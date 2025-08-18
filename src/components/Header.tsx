@@ -97,20 +97,28 @@ const Header: React.FC = () => {
               <li key={item.text}>
                 <Link
                   href={item.url}
-                  className="text-foreground hover:text-primary block"
+                  className="text-foreground hover:text-foreground-accent block"
                   onClick={toggleMenu}
                 >
                   {item.text}
                 </Link>
               </li>
             ))}
+            <li key="공식 파트너사">
+              <a
+                href="https://www.acefitness.org/resources/partners/international-partners/"
+                className="text-foreground hover:text-foreground-accent transition-colors"
+                target="_blank"
+              >
+                공식 파트너사
+              </a>
+            </li>
             <li>
               <Link
                 href="#cta"
-                className="text-black bg-primary hover:bg-primary-accent px-5 py-2 rounded-full block w-fit"
-                onClick={toggleMenu}
+                className="text-black bg-white border-2 border-[#e2363e] hover:bg-gray-100 px-8 py-2 rounded-full transition-colors"
               >
-                Get Started
+                <span className="font-semibold">ACE 신청</span>
               </Link>
             </li>
           </ul>

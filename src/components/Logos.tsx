@@ -69,7 +69,7 @@ const Logos: React.FC = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={`${cert.name} 페이지로 이동`}
-                    className="block bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-8 h-24 flex items-center justify-center border border-gray-200"
+                    className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-8 h-24 flex items-center justify-center border border-gray-200"
                   >
                     <Image
                       src={cert.img}
@@ -95,7 +95,7 @@ const Logos: React.FC = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={`${cert.name} 페이지로 이동`}
-                    className="block bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-8 h-24 flex items-center justify-center border border-gray-200"
+                    className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-8 h-24 flex items-center justify-center border border-gray-200"
                   >
                     <Image
                       src={cert.img}
@@ -128,6 +128,17 @@ const Logos: React.FC = () => {
           }
           100% {
             transform: translateX(-100%);
+          }
+        }
+
+        @media (max-width: 768px) {
+          @keyframes scroll-x {
+            0% {
+              transform: translateX(0);
+            }
+            100% {
+              transform: translateX(calc(-224px * 5));
+            }
           }
         }
 

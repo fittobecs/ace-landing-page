@@ -18,7 +18,7 @@ const CptComparison: React.FC = () => {
       leftOrg: "/images/acsm_logo.png",
       leftTitle: "ACSM CPT",
       leftDescription:
-        "ACSM은 주로 임상 환자, 고위험군, 대사 질환자, 심혈관 질환자 등 특수 집단을 대상으로 한 운동 처방에 중점을 두고 있다.",
+        "ACSM은 주로 임상 환자, 고위험군, 심혈관 질환자 등 특수 집단을 대상으로 한 운동 처방에 중점을 두고 있다.",
       rightDescription:
         "ACE CPT는 일반인의 일상 습관 개선, 비만 예방, 웰빙 코칭에 특화되어 있어 커뮤니티, 기업, 의료기관 등 다양한 현장에서 넓은 응용 가능성을 갖고 있다.",
     },
@@ -182,15 +182,15 @@ const CptComparison: React.FC = () => {
       </div>
 
       {/* 모바일 화살표 버튼 */}
-      <div className="md:hidden flex justify-center mt-6 space-x-4">
+      <div className="md:hidden flex justify-center mt-6 space-x-10">
         <button
           onClick={prevSlide}
-          className="w-10 h-10 bg-gray-300 hover:bg-gray-400 flex items-center justify-center transition-colors rounded-lg"
+          className="w-12 h-12 bg-gray-300 hover:bg-gray-400 flex items-center justify-center transition-colors rounded-lg"
           style={{ clipPath: "polygon(25% 50%, 75% 20%, 75% 80%)" }}
         ></button>
         <button
           onClick={nextSlide}
-          className="w-10 h-10 bg-gray-300 hover:bg-gray-400 flex items-center justify-center transition-colors rounded-lg"
+          className="w-12 h-12 bg-gray-300 hover:bg-gray-400 flex items-center justify-center transition-colors rounded-lg"
           style={{ clipPath: "polygon(25% 20%, 25% 80%, 75% 50%)" }}
         ></button>
       </div>

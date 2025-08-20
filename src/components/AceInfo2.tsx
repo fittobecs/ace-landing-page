@@ -41,7 +41,7 @@ const AceInfo2: React.FC = () => {
             <p className="text-gray-700 text-lg leading-relaxed">
               - 특정 분야나 고객 층에 초점을 맞추지 않고 초심자부터 선수까지
               모두 다룰 수 있는 프로그램입니다. 실전에서 바로 활용 가능한 실무
-              중심의 커리큘럼으로 구성되어있습니다.
+              중심의 커리큘럼으로 구성되어 있습니다.
             </p>
           </div>
 

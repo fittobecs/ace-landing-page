@@ -37,7 +37,7 @@ const ImageBlocks: React.FC = () => {
                   <div className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-black rounded-full flex-shrink-0"></div>
                     <span className="text-gray-700 text-lg">
-                      고등학생 이상의 학력
+                      고등학교 졸업 이상의 학력
                     </span>
                   </div>
                 </div>

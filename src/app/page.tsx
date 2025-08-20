@@ -1,6 +1,5 @@
 import AceInfo1 from "@/components/AceInfo1"
 import AceInfo2 from "@/components/AceInfo2"
-import Certificate from "@/components/Certificate"
 import Container from "@/components/Container"
 import CptComparison from "@/components/CptComparison"
 import CTA from "@/components/CTA"
@@ -19,7 +18,6 @@ const HomePage: React.FC = () => {
         <AceInfo1 />
         <AceInfo2 />
         <CptComparison />
-        <Certificate />
         <ImageBlocks />
         <Logos />
         <Section

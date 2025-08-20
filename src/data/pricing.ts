@@ -4,7 +4,7 @@ export const tiers: IPricing[] = [
   {
     name: "시험 + 교재",
     price: "860,000원",
-    features: [],
+    features: ["한국어 시험", "한국어 번역 교재"],
   },
   {
     name: "시험 + 교재 + 연수",

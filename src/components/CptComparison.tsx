@@ -10,25 +10,25 @@ const CptComparison: React.FC = () => {
       leftOrg: "/images/nasm_logo.png",
       leftTitle: "NASM CPT",
       leftDescription:
-        "NASM(National Academy of Sports Medicine)은 부상 예방, 교정운동, 기능성 훈련에 초점에 맞추고 있다.",
+        "NASM(National Academy of Sports Medicine)은 부상 예방, 교정운동, 기능성 훈련에 초점에 맞추고 있습니다.",
       rightDescription:
-        "ACE는 Integrated Functionality Training(IF-T) 모델을 통해 고객의 현재 능력과 목적에 맞춰 프로그램을 통적으로 조정하는데 중점을 두고 있다.",
+        "ACE는 Integrated Functionality Training(IF-T) 모델을 통해 고객의 현재 능력과 목적에 맞춰 프로그램을 통합적으로 조정하는데 중점을 두고 있습니다.",
     },
     {
       leftOrg: "/images/acsm_logo.png",
       leftTitle: "ACSM CPT",
       leftDescription:
-        "ACSM은 주로 임상 환자, 고위험군, 심혈관 질환자 등 특수 집단을 대상으로 한 운동 처방에 중점을 두고 있다.",
+        "ACSM은 주로 임상 환자, 고위험군, 심혈관 질환자 등 특수 집단을 대상으로 한 운동 처방에 중점을 두고 있습니다.",
       rightDescription:
-        "ACE CPT는 일반인의 일상 습관 개선, 비만 예방, 웰빙 코칭에 특화되어 있어 커뮤니티, 기업, 의료기관 등 다양한 현장에서 넓은 응용 가능성을 갖고 있다.",
+        "ACE CPT는 일반인의 일상 습관 개선, 비만 예방, 웰빙 코칭에 특화되어 있어 커뮤니티, 기업, 의료기관 등 다양한 현장에서 넓은 응용 가능성을 갖고 있습니다.",
     },
     {
       leftOrg: "/images/nsca_logo.jpg",
       leftTitle: "NSCA CPT",
       leftDescription:
-        "NSCA의 CSCS 자격은 주로 운동선수의 퍼포먼스 향상과 고강도 훈련에만 특화되어있다.",
+        "NSCA의 CSCS 자격은 주로 운동선수의 퍼포먼스 향상과 고강도 훈련에만 특화되어있습니다.",
       rightDescription:
-        "ACE는 개인 트레이닝, 그룹 트레이닝, 커뮤니티 프로그램 등 다양한 현장에서 활용 가능하다.",
+        "ACE는 개인 트레이닝, 그룹 트레이닝, 커뮤니티 프로그램 등 다양한 현장에서 활용 가능합니다.",
     },
   ]
 
@@ -75,7 +75,27 @@ const CptComparison: React.FC = () => {
         <div className="md:mx-24">
           {/* 데스크탑 레이아웃 */}
           <div className="hidden md:grid grid-cols-2 gap-16 items-start min-h-96">
-            {/* 왼쪽 - 다른 기관 */}
+            {/* ACE */}
+            <div className="text-center">
+              <div className="mb-6 flex items-center justify-center h-16">
+                <img
+                  src="/images/ace_logo.png"
+                  width={125}
+                  height={70}
+                  alt="Comparison image"
+                  className="max-h-16 object-contain"
+                />
+              </div>
+
+              <div className="bg-yellow-400 rounded-full px-6 py-3 inline-block mb-8">
+                <span className="text-gray-800 font-medium">ACE CPT</span>
+              </div>
+
+              <p className="text-gray-700 text-lg leading-relaxed">
+                {comparisons[currentSlide].rightDescription}
+              </p>
+            </div>
+            {/* 다른 기관 */}
             <div className="text-center">
               <div className="mb-6 flex items-center justify-center h-16">
                 <img
@@ -98,63 +118,12 @@ const CptComparison: React.FC = () => {
               </p>
             </div>
 
-            {/* 오른쪽 - ACE */}
-            <div className="text-center">
-              <div className="mb-6 flex items-center justify-center h-16">
-                <img
-                  src="/images/ace_logo.png"
-                  width={125}
-                  height={70}
-                  alt="Comparison image"
-                  className="max-h-16 object-contain"
-                />
-              </div>
-
-              <div className="bg-yellow-400 rounded-full px-6 py-3 inline-block mb-8">
-                <span className="text-gray-800 font-medium">ACE CPT</span>
-              </div>
-
-              <p className="text-gray-700 text-lg leading-relaxed">
-                {comparisons[currentSlide].rightDescription}
-              </p>
-            </div>
-
             {/* 가운데 세로 구분선 */}
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-px h-48 bg-gray-200"></div>
           </div>
 
           {/* 모바일 레이아웃 */}
           <div className="md:hidden space-y-6">
-            {/* 다른 기관 */}
-            <div className="bg-gray-50 rounded-lg p-4">
-              <div className="text-center mb-4">
-                <div className="mb-3 flex items-center justify-center h-12">
-                  <img
-                    src={comparisons[currentSlide].leftOrg}
-                    width={100}
-                    height={50}
-                    alt="Comparison image"
-                    className="max-h-12 object-contain"
-                  />
-                </div>
-                <div className="bg-gray-100 rounded-full px-4 py-2 inline-block mb-3">
-                  <span className="text-gray-700 font-medium text-sm">
-                    {comparisons[currentSlide].leftTitle}
-                  </span>
-                </div>
-              </div>
-              <p className="text-gray-700 text-sm leading-relaxed text-center">
-                {comparisons[currentSlide].leftDescription}
-              </p>
-            </div>
-
-            {/* VS 구분선 */}
-            <div className="flex items-center justify-center">
-              <div className="flex-1 h-px bg-gray-300"></div>
-              <span className="px-4 text-gray-500 font-semibold">VS</span>
-              <div className="flex-1 h-px bg-gray-300"></div>
-            </div>
-
             {/* ACE */}
             <div className="bg-yellow-50 rounded-lg p-4">
               <div className="text-center mb-4">
@@ -175,6 +144,35 @@ const CptComparison: React.FC = () => {
               </div>
               <p className="text-gray-700 text-sm leading-relaxed text-center">
                 {comparisons[currentSlide].rightDescription}
+              </p>
+            </div>
+
+            {/* VS 구분선 */}
+            <div className="flex items-center justify-center">
+              <div className="flex-1 h-px bg-gray-300"></div>
+              <span className="px-4 text-gray-500 font-semibold">VS</span>
+              <div className="flex-1 h-px bg-gray-300"></div>
+            </div>
+            {/* 다른 기관 */}
+            <div className="bg-gray-50 rounded-lg p-4">
+              <div className="text-center mb-4">
+                <div className="mb-3 flex items-center justify-center h-12">
+                  <img
+                    src={comparisons[currentSlide].leftOrg}
+                    width={100}
+                    height={50}
+                    alt="Comparison image"
+                    className="max-h-12 object-contain"
+                  />
+                </div>
+                <div className="bg-gray-100 rounded-full px-4 py-2 inline-block mb-3">
+                  <span className="text-gray-700 font-medium text-sm">
+                    {comparisons[currentSlide].leftTitle}
+                  </span>
+                </div>
+              </div>
+              <p className="text-gray-700 text-sm leading-relaxed text-center">
+                {comparisons[currentSlide].leftDescription}
               </p>
             </div>
           </div>

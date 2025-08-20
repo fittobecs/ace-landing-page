@@ -10,7 +10,7 @@ const CptComparison: React.FC = () => {
       leftOrg: "/images/nasm_logo.png",
       leftTitle: "NASM CPT",
       leftDescription:
-        "NASM(National Academy of Sports Medicine)은 부상 예방, 교정운동, 기능성 훈련에 초점에 맞추고 있습니다.",
+        "NASM(National Academy of Sports Medicine)은 부상 예방, 교정운동, 기능성 훈련에 중점을 두고 있습니다.",
       rightDescription:
         "ACE는 Integrated Functionality Training(IF-T) 모델을 통해 고객의 현재 능력과 목적에 맞춰 프로그램을 통합적으로 조정하는데 중점을 두고 있습니다.",
     },
@@ -26,7 +26,7 @@ const CptComparison: React.FC = () => {
       leftOrg: "/images/nsca_logo.jpg",
       leftTitle: "NSCA CPT",
       leftDescription:
-        "NSCA의 CSCS 자격은 주로 운동선수의 퍼포먼스 향상과 고강도 훈련에만 특화되어있습니다.",
+        "NSCA의 CSCS 자격은 주로 운동선수의 퍼포먼스 향상과 고강도 훈련에만 특화되어 있습니다.",
       rightDescription:
         "ACE는 개인 트레이닝, 그룹 트레이닝, 커뮤니티 프로그램 등 다양한 현장에서 활용 가능합니다.",
     },

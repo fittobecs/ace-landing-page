@@ -27,9 +27,9 @@ const AceInfo2: React.FC = () => {
               1. 전 세계 어디서나 인정받을 수 있습니다.
             </div>
             <p className="text-gray-700 text-lg leading-relaxed">
-              - 미국 국가자격인증 위원회(National Commission for Certifying
-              Agencies)가 인증하는 자격 인증 프로그램입니다. 국제적으로 인증
-              받아 국내, 국외에서 전부 사용 가능합니다.
+              - 미국 국가 자격 인증 위원회(NCCA, National Commision for
+              Certifying Agencies)가 인증하는 자격 인증 프로그램입니다.
+              국제적으로 인증 받아 국내, 국외에서 전부 사용 가능합니다.
             </p>
           </div>
 

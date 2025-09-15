@@ -7,6 +7,7 @@ import FAQ from "@/components/FAQ"
 import Hero from "@/components/Hero"
 import ImageBlocks from "@/components/ImageBlocks"
 import Logos from "@/components/Logos"
+import NCCACertificationComponent from "@/components/NCCACertification"
 import Pricing from "@/components/Pricing/Pricing"
 import Section from "@/components/Section"
 
@@ -18,6 +19,7 @@ const HomePage: React.FC = () => {
         <AceInfo1 />
         <AceInfo2 />
         <CptComparison />
+        <NCCACertificationComponent />
         <ImageBlocks />
         <Logos />
         <Section

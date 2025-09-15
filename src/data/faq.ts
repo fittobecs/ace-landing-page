@@ -1,29 +1,28 @@
 import { IFAQ } from "@/types"
-import { siteDetails } from "./siteDetails"
 
 export const faqs: IFAQ[] = [
   {
-    question: `시험 문항이 몇 문항 인가요?`,
+    question: `시험 합격 기준이 어떻게 되나요?`,
     answer:
-      "Absolutely. We use bank-level encryption to protect your data and never store your login information. Plus, our biometric authentication adds an extra layer of security.",
+      "시험은 총 150 문항이며, 70%이상 정답 시 통과로 800점 만점에 500점 이상 합격입니다.",
   },
   {
-    question: `재시험 비용이 어떻게 되나요? 할인 있나요?`,
+    question: `구매 후 반품이 가능한가요?`,
     answer:
-      "Absolutely! Your Finwise account syncs seamlessly across all your devices - smartphone, tablet, and computer.",
+      "시험, 교재 상품의 경우 환불이 절대 불가능합니다. 연수 과정의 경우, 홈페이지 내 환불 정책 참고 부탁드립니다.",
   },
   {
-    question: "환불 규정이 어떻게 되나요?",
-    answer: `Yes! ${siteDetails.siteName} supports connections with over 10,000 financial institutions worldwide. Simply log in through our secure portal to link your accounts.`,
+    question: "틀린 시험 문제가 무엇인지 확인할 수 있나요?",
+    answer: `불가능합니다. ACE 자격 시험 문제는 철저히 보안 및 관리됩니다. 따라서 틀린 시험 문제가 무엇인지 공개되지 않습니다.`,
   },
   {
-    question: "fms 아카데미 회원인데 할인이 있나요?",
+    question: "ACE CPT 자격증이 있으면 왜 좋은가요?",
     answer:
-      "Not at all! Our expert-curated portfolios and educational resources make investing accessible to everyone, regardless of experience level.",
+      "ACE CPT를 취득하시면 미국을 포함한 국제적 기준에 맞는 높은 트레이닝 전문성이 있다는 것을 검증받은 것에 다름없습니다. 고객은 물론 고용주에게도 목표 세팅, 티칭 테크닉, 스크리닝, 건강, 영양, 고객과의 커뮤니케이션 등 현장에서 필요한 다양한 업무에 대해 전문성이 있음을 어필할 수 있습니다. CPT는 해부/생리/역학 내용을 포함하는 것은 물론, 고객을 실제로 변화시키기 위해 고객과의 커뮤니케이션, 행동-인지 변화를 통한 라이프 스타일 코치의 역량을 양성하는데 초점을 맞추고 있습니다. 현재 의학계를 비롯한 다양한 건강 관리 분야에서는 이처럼 행동 변화를 중심에 두는 것을 공통적으로 추구하고 있습니다.",
   },
   {
-    question: "교재 PDF 파일로 받을 수 있나요?",
+    question: "같이 있으면 좋은 자격증 과정이 있을까요?",
     answer:
-      "Our dedicated support team is available 24/7 via chat or email. Plus, we offer extensive in-app tutorials and a comprehensive knowledge base to help you make the most of Finwise.",
+      " ACE에서 인정하는 평생 교육 FMS 코리아의 자격 과정을 추천 드립니다. FMS사 자격 과정은 현재 7가지가 있으며 전부 한국어로 수강 및 시험이 가능합니다. 재활부터 교정 퍼포먼스 향상 프로그램까지 다양한 과정이 있습니다. 부상이나 전반적인 운동 능력 저하로 기능 제한이 있는 운동 선수들까지 전부 활용 가능하며 SSG 구단, 손흥민, 이강인 등 다양한 현직자들과 구단 및 미국 현지에서도 사용 중인 그 효과를 인정받은 프로그램입니다. 의료 및 물리치료사, AT, PT전문가들의 자격증으로 ACE와 연관이 깊으며 전반적인 능력 향상에 도움을 줄 수 있습니다. 현재 멤버십에 가입하면 1년간 7가지 자격 강좌를 무제한 수강 가능하며, 각 과정 별 3회의 시험 기회 및 자격증 발급비도 포함입니다. 멤버십 가격은 기존 자격 과정 1개의 값과 동일하게 책정되어 있어, 합리적인 가격으로 다양한 자격증 취득이 가능합니다.",
   },
 ]

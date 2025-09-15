@@ -60,7 +60,7 @@ const FAQ: React.FC = () => {
       </div>
       <div className="mt-5 text-center">
         <a
-          href="https://www.fittobe.ac/board/index.jsp?code=faq"
+          href="https://www.fittobe.ac/board/index.jsp?code=ACEfaq&s_keyword="
           target="_blank"
           className="inline-flex items-center text-lg text-[#e2363e] font-semibold hover:underline"
         >

@@ -99,8 +99,8 @@ const NCCACertificationComponent: React.FC = () => {
             NCCA는 기관을 인증하는 것이 아니라, 그 기관이 발급하는
             &apos;자격증&apos; 자체를 인증하는 것으로 공신력을 보증하며, 한 기관
             내에 인증 되는 자격증과 인증을 받지 못한 자격증이 함께 있을 수
-            있습니다. 그렇기에 NCCA의 인증을 받은 자격증은 높은 수준의 전문성을
-            갖춘 것으로 인정받습니다.
+            있습니다.<br></br>그렇기에 NCCA의 인증을 받은 자격증은 높은 수준의
+            전문성을 갖춘 것으로 인정받습니다.
           </p>
 
           <p className="font-semibold">

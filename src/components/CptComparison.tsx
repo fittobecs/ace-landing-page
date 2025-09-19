@@ -10,25 +10,25 @@ const CptComparison: React.FC = () => {
       leftOrg: "/images/nasm_logo.png",
       leftTitle: "NASM CPT",
       leftDescription:
-        "NASM(National Academy of Sports Medicine)은 부상 예방, 교정운동, 기능성 훈련에 중점을 두고 있습니다.",
+        "교정 운동과 근육 불균형 교정에 초점을 맞추어 주로 포스트 리햅·교정 특화 트레이너에게 적합합니다.",
       rightDescription:
-        "ACE는 Integrated Functionality Training(IF-T) 모델을 통해 고객의 현재 능력과 목적에 맞춰 프로그램을 통합적으로 조정하는데 중점을 두고 있습니다.",
+        "ACE는 특정 집단에 국한되지 않아 폭넓은 지도가 가능합니다. IFT 모델로 맞춤형 프로그램을 설계하고, 동기부여와 습관 형성 전략을 통한 지속 성과를 만듭니다.",
     },
     {
       leftOrg: "/images/acsm_logo.png",
       leftTitle: "ACSM CPT",
       leftDescription:
-        "ACSM은 주로 임상 환자, 고위험군, 심혈관 질환자 등 특수 집단을 대상으로 한 운동 처방에 중점을 두고 있습니다.",
+        "운동 과학적 지식·학문적 기초에 강점을 가진 교육 과정으로 특수 집단을 대상으로 한 운동 처방에 중점을 두고 있습니다.",
       rightDescription:
-        "ACE CPT는 일반인의 일상 습관 개선, 비만 예방, 웰빙 코칭에 특화되어 있어 커뮤니티, 기업, 의료기관 등 다양한 현장에서 넓은 응용 가능성을 갖고 있습니다.",
+        "즉시 현장에서 적용 가능한 스크리닝·프로그램 템플릿을 제공하며, IFT 모델과 Mover Method®로 실제 행동 변화를 만들어내는 코칭까지 가능합니다.",
     },
     {
       leftOrg: "/images/nsca_logo.jpg",
       leftTitle: "NSCA CPT",
       leftDescription:
-        "NSCA의 CSCS 자격은 주로 운동선수의 퍼포먼스 향상과 고강도 훈련에만 특화되어 있습니다.",
+        "엘리트 선수·퍼포먼스 향상에 초점이 맞춰져 있으며, 고급 체력 훈련과 스포츠 퍼포먼스 지향적입니다.",
       rightDescription:
-        "ACE는 개인 트레이닝, 그룹 트레이닝, 커뮤니티 프로그램 등 다양한 현장에서 활용 가능합니다.",
+        "일반인과 초보 트레이너에게 진입 장벽이 낮고, 명확한 스크리닝 방법, 클라이언트 커뮤니케이션, 프로그램 템플릿으로 고객을 바로 지도할 수 있는 준비된 트레이너를 만듭니다.",
     },
   ]
 

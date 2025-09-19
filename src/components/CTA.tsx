@@ -3,8 +3,15 @@ import { REQUEST_URL } from "@/data/constant"
 import { ctaDetails } from "@/data/cta"
 
 const CTA: React.FC = () => {
-  const handleClick = () => {
+  const handleAceClick = () => {
     window.open(REQUEST_URL, "_blank", "noopener,noreferrer")
+  }
+  const handleDetailClick = () => {
+    window.open(
+      "https://www.fittobe.ac/main/page.jsp?code=ace_cpt_",
+      "_blank",
+      "noopener,noreferrer"
+    )
   }
 
   return (
@@ -26,13 +33,13 @@ const CTA: React.FC = () => {
             <div className="mt-4 inline-flex items-center gap-4 sm:gap-14">
               <button
                 className="bg-white hover:bg-gray-200 text-black font-bold py-2 px-6 rounded-full text-sm sm:text-base"
-                onClick={handleClick}
+                onClick={handleAceClick}
               >
                 ACE 신청하기
               </button>
               <button
                 className="bg-white hover:bg-gray-200 text-black font-bold py-2 px-6 rounded-full text-sm sm:text-base"
-                onClick={handleClick}
+                onClick={handleDetailClick}
               >
                 상세 페이지
               </button>

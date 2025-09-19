@@ -82,7 +82,7 @@ const NCCACertificationComponent: React.FC = () => {
       <div className="space-y-4 text-gray-700">
         <div>
           <h2 className="font-bold text-lg mb-2">
-            *미국국가 자격 인증 위원회
+            *미국 국가 자격 인증 위원회
             <br />
             (NCCA, National Commision for Certifying Agencies)
           </h2>
@@ -104,7 +104,8 @@ const NCCACertificationComponent: React.FC = () => {
           </p>
 
           <p className="font-semibold">
-            ACE는 기관 내 전 과정을 NCCA의 엄격한 인증을 받았습니다.
+            ACE는 기관 내 주요 4가지 자격 과정을 NCCA의 엄격한 인증을
+            받았습니다.
           </p>
         </div>
       </div>

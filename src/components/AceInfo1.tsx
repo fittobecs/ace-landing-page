@@ -23,7 +23,7 @@ const AceInfo1: React.FC = () => {
           <img src="/images/ace_icon_1.png" width={80} height={80}></img>
           <div className="flex items-center h-20">
             <p className="text-lg text-gray-800 leading-relaxed flex-1">
-              ACE(American Council on Exerise)는 1983년에 설립된 미국의 비영리
+              ACE(American Council on Exerise)는 1985년에 설립된 미국의 비영리
               피트니스 교육 기관입니다.
             </p>
           </div>

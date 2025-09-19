@@ -32,7 +32,7 @@ const ImageBlocks: React.FC = () => {
                   </div>
                   <div className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-black rounded-full flex-shrink-0"></div>
-                    <span className="text-gray-700 text-lg">CPR 자격증</span>
+                    <span className="text-gray-700 text-lg">CPR 수료증</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-black rounded-full flex-shrink-0"></div>
@@ -42,7 +42,7 @@ const ImageBlocks: React.FC = () => {
                   </div>
                 </div>
                 <div className="mt-6 text-gray-600 text-sm">
-                  (시험 신청 시 유효한 CPR 자격증 업로드 필수)
+                  (시험 신청 시 유효한 CPR 수료증 업로드 필수)
                 </div>
               </div>
             </div>
@@ -132,7 +132,7 @@ const ImageBlocks: React.FC = () => {
                   <div className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-black rounded-full flex-shrink-0"></div>
                     <span className="text-gray-700 text-lg">
-                      CPR 자격증 갱신
+                      CPR 수료증 갱신
                     </span>
                   </div>
                   <div className="flex items-center space-x-3">

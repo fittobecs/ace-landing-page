@@ -1,7 +1,6 @@
 import clsx from "clsx"
 import { BsFillCheckCircleFill } from "react-icons/bs"
 
-import { REQUEST_URL } from "@/data/constant"
 import { IPricing } from "@/types"
 
 interface Props {
@@ -10,7 +9,7 @@ interface Props {
 }
 
 const PricingColumn: React.FC<Props> = ({ tier, highlight }: Props) => {
-  const { name, price, features } = tier
+  const { name, link, price, features } = tier
 
   return (
     <div
@@ -31,7 +30,7 @@ const PricingColumn: React.FC<Props> = ({ tier, highlight }: Props) => {
         </p>
         <a
           target="_blank"
-          href={REQUEST_URL}
+          href={link}
           className={clsx(
             "block w-full py-3 px-4 rounded-full text-center font-semibold transition-colors",
             {

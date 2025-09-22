@@ -20,7 +20,8 @@ export const tiers: IPricing[] = [
   {
     name: "연수",
     link: "https://www.fittobe.ac/course/course_view.jsp?id=186913&cid=118148#course-view-186913",
-    price: "450,000원",
+    previousPrice: "450,000원",
+    price: "300,000원",
     features: [
       "연수 과정 4주 진행 - 회당 2시간, 총 8시간",
       "시험 + 교재를 구매한 사람만 구매 가능",

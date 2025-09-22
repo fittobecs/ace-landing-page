@@ -19,6 +19,7 @@ export interface IBenefitBullet {
 export interface IPricing {
   name: string
   link: string
+  previousPrice?: number | string
   price: number | string
   features: string[]
 }

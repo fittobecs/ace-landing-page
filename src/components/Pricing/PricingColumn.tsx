@@ -9,7 +9,7 @@ interface Props {
 }
 
 const PricingColumn: React.FC<Props> = ({ tier, highlight }: Props) => {
-  const { name, link, price, features } = tier
+  const { name, link, price, previousPrice, features } = tier
 
   return (
     <div
@@ -20,6 +20,11 @@ const PricingColumn: React.FC<Props> = ({ tier, highlight }: Props) => {
     >
       <div className="p-6 border-b border-gray-200 rounded-t-xl">
         <h3 className="text-2xl font-semibold mb-4">{name}</h3>
+        {previousPrice && (
+          <p className="text-2xl md:text-3xl text-gray-400 font-semibold mb-6 line-through">
+            {previousPrice}
+          </p>
+        )}
         <p className="text-3xl md:text-5xl font-bold mb-6">
           <span className={clsx({ "text-[#e2363e]": highlight })}>
             {typeof price === "number" ? `$${price}` : price}

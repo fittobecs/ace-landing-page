@@ -25,6 +25,11 @@ const PricingColumn: React.FC<Props> = ({ tier, highlight }: Props) => {
             {previousPrice}
           </p>
         )}
+        {!previousPrice && (
+          <p className="text-2xl md:text-3xl text-gray-400 font-semibold mb-6">
+            &nbsp;
+          </p>
+        )}
         <p className="text-3xl md:text-5xl font-bold mb-6">
           <span className={clsx({ "text-[#e2363e]": highlight })}>
             {typeof price === "number" ? `$${price}` : price}

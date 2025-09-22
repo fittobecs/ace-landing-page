@@ -10,6 +10,7 @@ export const tiers: IPricing[] = [
   {
     name: "시험 + 교재 + 연수",
     link: "https://www.fittobe.ac/course/course_view.jsp?id=184374&cid=118148#course-view-184374",
+    previousPrice: "1,310,000원",
     price: "990,000원",
     features: [
       "연수과정(줌 실시간)은 개별 상품과 동일",

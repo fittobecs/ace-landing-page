@@ -23,6 +23,7 @@ export const tiers: IPricing[] = [
     previousPrice: "450,000원",
     price: "300,000원",
     features: [
+      "얼리버드 할인 진행 중",
       "연수 과정 4주 진행 - 회당 2시간, 총 8시간",
       "시험 + 교재를 구매한 사람만 구매 가능",
       "교재 제공은 별도로 되지 않음",

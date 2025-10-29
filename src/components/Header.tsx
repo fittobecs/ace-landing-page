@@ -58,7 +58,8 @@ const Header: React.FC = () => {
                 target="_blank"
                 className="text-black bg-white border-2 border-[#e2363e] hover:bg-gray-100 px-8 py-3 rounded-full transition-colors"
               >
-                <span className="font-semibold">ACE 신청</span>
+                <span className="font-semibold text-lg">ACE </span>
+                <span className="font-semibold text-[17px]">신청</span>
               </a>
             </li>
           </ul>

@@ -8,7 +8,7 @@ const CTA: React.FC = () => {
   }
   const handleDetailClick = () => {
     window.open(
-      "https://www.fittobe.ac/main/page.jsp?code=ace_cpt_",
+      "https://www.fittobe.ac/main/index.jsp",
       "_blank",
       "noopener,noreferrer"
     )
@@ -23,12 +23,16 @@ const CTA: React.FC = () => {
           </div>
 
           <div className="h-full flex flex-col items-center justify-center text-white text-center px-5">
-            <h2 className="text-xl sm:text-3xl md:text-4xl md:leading-tight font-semibold mb-4 max-w-2xl">
+            <h2 className="text-xl whitespace-pre-line sm:text-3xl md:text-4xl md:leading-tight font-semibold mb-4 max-w-2xl">
               {ctaDetails.heading}
             </h2>
 
-            <p className="mx-auto max-w-xl md:px-5">{ctaDetails.subheading1}</p>
-            <p className="mx-auto max-w-xl md:px-5">{ctaDetails.subheading2}</p>
+            <p className="mx-auto max-w-xl md:px-5 text-base md:text-lg">
+              {ctaDetails.subheading1}
+            </p>
+            <p className="mx-auto max-w-xl md:px-5 text-base md:text-lg">
+              {ctaDetails.subheading2}
+            </p>
 
             <div className="mt-4 inline-flex items-center gap-4 sm:gap-14">
               <button
@@ -41,7 +45,7 @@ const CTA: React.FC = () => {
                 className="bg-white hover:bg-gray-200 text-black font-bold py-2 px-6 rounded-full text-sm sm:text-base"
                 onClick={handleDetailClick}
               >
-                상세 페이지
+                홈페이지
               </button>
             </div>
           </div>

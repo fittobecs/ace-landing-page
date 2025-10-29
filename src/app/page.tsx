@@ -1,26 +1,32 @@
 import AceInfo1 from "@/components/AceInfo1"
 import AceInfo2 from "@/components/AceInfo2"
+import AceMainInfo from "@/components/AceMainInfo"
+import AceTestInfoTable from "@/components/AceTestInfoTable"
+import AceWhatType from "@/components/AceWhatType"
 import Container from "@/components/Container"
 import CptComparison from "@/components/CptComparison"
 import CTA from "@/components/CTA"
 import FAQ from "@/components/FAQ"
 import Hero from "@/components/Hero"
-import ImageBlocks from "@/components/ImageBlocks"
 import Logos from "@/components/Logos"
 import NCCACertificationComponent from "@/components/NCCACertification"
 import Pricing from "@/components/Pricing/Pricing"
 import Section from "@/components/Section"
+import TopLogos from "@/components/TopLogos"
 
 const HomePage: React.FC = () => {
   return (
     <>
       <Hero />
+      <TopLogos />
       <Container>
+        <AceMainInfo />
         <AceInfo1 />
+        <AceWhatType />
         <AceInfo2 />
         <CptComparison />
         <NCCACertificationComponent />
-        <ImageBlocks />
+        <AceTestInfoTable />
         <Logos />
         <Section
           id="pricing"

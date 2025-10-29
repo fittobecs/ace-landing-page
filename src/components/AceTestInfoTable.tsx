@@ -1,6 +1,6 @@
 const AceTestInfoTable: React.FC = () => {
   return (
-    <div id="test-info" className="w-full p-16 ">
+    <div id="test-info" className="w-full p-8 md:p-16 ">
       <div className="max-w-4xl mx-auto md:px-6">
         {/* Test Info Table */}
         <div className="overflow-x-auto">

@@ -1,6 +1,6 @@
 const AceMainInfo: React.FC = () => {
   return (
-    <div id="features" className="w-full p-16">
+    <div id="features" className="w-full p-8 md:p-16">
       <div className="max-w-4xl mx-auto px-6">
         {/* Main Title */}
         <div className="text-center mb-6">

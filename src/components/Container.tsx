@@ -10,7 +10,7 @@ const Container: React.FC<React.PropsWithChildren<Props>> = ({
 }: React.PropsWithChildren<Props>) => {
   return (
     <div
-      className={`px-5 break-keep w-full max-w-7xl mx-auto ${
+      className={`md:px-5 break-keep w-full max-w-7xl mx-auto ${
         className ? className : ""
       }`}
     >

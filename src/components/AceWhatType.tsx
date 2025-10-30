@@ -11,7 +11,38 @@ const AceWhatType: React.FC = () => {
         <div className="w-full max-w-md mx-auto h-1 bg-red-400 rounded-full"></div>
       </div>
 
-      <div className="flex items-center">
+      <div className="mb-8 grid grid-cols-2 md:grid-cols-4 gap-4 items-center">
+        <Image
+          src="/images/red_mark.png"
+          alt="red_mark"
+          width={150}
+          height={150}
+          className="mx-auto w-full max-w-xs h-auto"
+        />
+        <Image
+          src="/images/green_mark.png"
+          alt="green mark"
+          width={150}
+          height={150}
+          className="mx-auto w-full max-w-xs h-auto"
+        />
+        <Image
+          src="/images/black_mark.png"
+          alt="black mark"
+          width={150}
+          height={150}
+          className="mx-auto w-full max-w-xs h-auto"
+        />
+        <Image
+          src="/images/blue_mark.png"
+          alt="blue mark"
+          width={150}
+          height={150}
+          className="mx-auto w-full max-w-xs h-auto"
+        />
+      </div>
+
+      <div className="relative flex items-center">
         <Image
           src="/images/Personal Trainer.png"
           alt="Personal Trainer"
@@ -19,6 +50,11 @@ const AceWhatType: React.FC = () => {
           height={300}
           className="mx-auto w-full max-w-md h-auto"
         />
+        <div className="absolute inset-0 flex items-center justify-center">
+          <p className="text-white font-semibold text-4xl drop-shadow-lg text-center">
+            personal Trainer
+          </p>
+        </div>
       </div>
       <div>
         {/* 설명 섹션 */}
@@ -35,27 +71,56 @@ const AceWhatType: React.FC = () => {
       </div>
       {/* 이미지 섹션 - 반응형 */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mt-10 px-4">
-        <Image
-          src="/images/Health Coach.png"
-          alt="Health Coach"
-          width={220}
-          height={140}
-          className="mx-auto w-full max-w-[220px] h-auto"
-        />
-        <Image
-          src="/images/Group Fitness Instructor.png"
-          alt="Group Fitness Instructor"
-          width={220}
-          height={140}
-          className="mx-auto w-full max-w-[220px] h-auto"
-        />
-        <Image
-          src="/images/Medical Exercise Specialist.png"
-          alt="Medical Exercise Specialist"
-          width={220}
-          height={140}
-          className="mx-auto w-full max-w-[220px] h-auto"
-        />
+        {/* 이미지 1 */}
+        <div className="relative">
+          <Image
+            src="/images/Health Coach.png"
+            alt="Health Coach"
+            width={220}
+            height={140}
+            className="mx-auto w-full max-w-[220px] h-auto rounded-lg object-cover"
+          />
+          <div className="absolute inset-0 flex items-center justify-center">
+            <p className="text-white font-semibold text-lg drop-shadow-lg text-center">
+              Preparing <br />
+              for the launch
+            </p>
+          </div>
+        </div>
+
+        {/* 이미지 2 */}
+        <div className="relative">
+          <Image
+            src="/images/Group Fitness Instructor.png"
+            alt="Group Fitness Instructor"
+            width={220}
+            height={140}
+            className="mx-auto w-full max-w-[220px] h-auto rounded-lg object-cover"
+          />
+          <div className="absolute inset-0 flex items-center justify-center">
+            <p className="text-white font-semibold text-lg drop-shadow-lg text-center">
+              Preparing <br />
+              for the launch
+            </p>
+          </div>
+        </div>
+
+        {/* 이미지 3 */}
+        <div className="relative">
+          <Image
+            src="/images/Medical Exercise Specialist.png"
+            alt="Medical Exercise Specialist"
+            width={220}
+            height={140}
+            className="mx-auto w-full max-w-[220px] h-auto rounded-lg object-cover"
+          />
+          <div className="absolute inset-0 flex items-center justify-center">
+            <p className="text-white font-semibold text-lg drop-shadow-lg text-center">
+              Preparing <br />
+              for the launch
+            </p>
+          </div>
+        </div>
       </div>
       <div>
         <p className="text-base md:text-lg text-gray-800 leading-relaxed mt-10 text-center px-4">

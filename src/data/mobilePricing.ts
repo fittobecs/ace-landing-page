@@ -1,12 +1,6 @@
 import { IPricing } from "@/types"
 
-export const tiers: IPricing[] = [
-  {
-    name: "시험 + 교재",
-    link: "https://www.fittobe.ac/course/course_view.jsp?id=184373&cid=118148#course-view-184373",
-    price: "860,000원",
-    features: ["한국어 시험", "한국어 번역 교재"],
-  },
+export const mobileTiers: IPricing[] = [
   {
     name: "시험 + 교재 + 연수",
     link: "https://www.fittobe.ac/course/course_view.jsp?id=184374&cid=118148#course-view-184374",
@@ -17,6 +11,12 @@ export const tiers: IPricing[] = [
       "한국어 교재 한국 배송",
       "한국어 시험",
     ],
+  },
+  {
+    name: "시험 + 교재",
+    link: "https://www.fittobe.ac/course/course_view.jsp?id=184373&cid=118148#course-view-184373",
+    price: "860,000원",
+    features: ["한국어 시험", "한국어 번역 교재"],
   },
   {
     name: "연수",

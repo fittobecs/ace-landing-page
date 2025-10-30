@@ -56,10 +56,10 @@ const Header: React.FC = () => {
               <a
                 href={REQUEST_URL}
                 target="_blank"
-                className="text-black bg-white border-2 border-[#e2363e] hover:bg-gray-100 px-8 py-3 rounded-full transition-colors"
+                className="text-black bg-white border-4 border-[#e2363e] hover:bg-gray-100 px-8 py-3 rounded-full transition-colors"
               >
-                <span className="font-semibold text-lg">ACE </span>
-                <span className="font-semibold text-[17px]">신청</span>
+                <span className="font-bold text-lg">ACE </span>
+                <span className="font-bold text-[17px]">신청</span>
               </a>
             </li>
           </ul>

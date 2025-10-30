@@ -74,7 +74,7 @@ const AceWhatType: React.FC = () => {
         {/* 이미지 1 */}
         <div className="relative">
           <Image
-            src="/images/Health Coach.png"
+            src="/images/Health Coach Black.png"
             alt="Health Coach"
             width={220}
             height={140}
@@ -91,7 +91,7 @@ const AceWhatType: React.FC = () => {
         {/* 이미지 2 */}
         <div className="relative">
           <Image
-            src="/images/Group Fitness Instructor.png"
+            src="/images/Group Fitness Instructor Black.png"
             alt="Group Fitness Instructor"
             width={220}
             height={140}
@@ -108,7 +108,7 @@ const AceWhatType: React.FC = () => {
         {/* 이미지 3 */}
         <div className="relative">
           <Image
-            src="/images/Medical Exercise Specialist.png"
+            src="/images/Medical Exercise Specialist Black.png"
             alt="Medical Exercise Specialist"
             width={220}
             height={140}

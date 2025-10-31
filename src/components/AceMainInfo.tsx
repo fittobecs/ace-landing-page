@@ -4,6 +4,13 @@ const AceMainInfo: React.FC = () => {
       <div className="max-w-4xl mx-auto px-6">
         {/* Main Title */}
         <div className="text-center mb-6">
+          <h1 className="text-4xl md:text-6xl font-black text-gray-800 mb-3 leading-tight">
+            세계적으로 인정받는 퍼스널 트레이너 자격증
+          </h1>
+          <h1 className="text-3xl md:text-4xl font-extrabold text-gray-800 mb-8 leading-tight">
+            지금 바로 전 세계 90,000명 이상의 전문가들과 함께하세요.
+          </h1>
+
           <div className="relative w-full gap-y-4">
             <div className="w-full aspect-video mb-4">
               <iframe

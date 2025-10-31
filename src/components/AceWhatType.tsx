@@ -44,7 +44,7 @@ const AceWhatType: React.FC = () => {
 
       <div className="relative flex items-center">
         <Image
-          src="/images/Personal Trainer.png"
+          src="/images/Personal Trainer Text.png"
           alt="Personal Trainer"
           width={500}
           height={300}

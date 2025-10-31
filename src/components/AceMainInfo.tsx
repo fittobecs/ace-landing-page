@@ -7,7 +7,7 @@ const AceMainInfo: React.FC = () => {
           <h1 className="text-4xl md:text-6xl font-black text-gray-800 mb-3 leading-tight">
             세계적으로 인정받는 퍼스널 트레이너 자격증
           </h1>
-          <h1 className="text-3xl md:text-4xl font-extrabold text-gray-800 mb-8 leading-tight">
+          <h1 className="text-2xl md:text-3xl font-extrabold text-gray-800 mb-8 leading-tight">
             지금 바로 전 세계 90,000명 이상의 전문가들과 함께하세요.
           </h1>
 

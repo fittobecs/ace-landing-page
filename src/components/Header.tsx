@@ -20,7 +20,7 @@ const Header: React.FC = () => {
   // 네이버 공통 스크립트 (PV 이벤트)
   // --------------------------------------
   useEffect(() => {
-    const ACCOUNT_ID = "s_123456789abcdef" // 예시 ID, 실제 ID로 교체 필요
+    const ACCOUNT_ID = "s_4ba5ee74ec66" // 예시 ID, 실제 ID로 교체 필요
     const PRIMARY_DOMAIN = "ace.fittobe.ac"
     if (!window.wcs_add) {
       window.wcs_add = {}

@@ -1,12 +1,15 @@
 "use client"
 import { REQUEST_URL } from "@/data/constant"
 import { ctaDetails } from "@/data/cta"
+import { sendNaverViewContent } from "@/utils/sendNaverViewContent"
 
 const CTA: React.FC = () => {
   const handleAceClick = () => {
+    sendNaverViewContent()
     window.open(REQUEST_URL, "_blank", "noopener,noreferrer")
   }
   const handleDetailClick = () => {
+    sendNaverViewContent()
     window.open(
       "https://www.fittobe.ac/main/index.jsp",
       "_blank",

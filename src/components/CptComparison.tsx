@@ -1,5 +1,6 @@
 "use client"
 import { REQUEST_URL } from "@/data/constant"
+import { sendNaverViewContent } from "@/utils/sendNaverViewContent"
 import Image from "next/image"
 import React, { useState } from "react"
 
@@ -44,6 +45,7 @@ const CptComparison: React.FC = () => {
   }
 
   const handleClick = () => {
+    sendNaverViewContent()
     window.open(REQUEST_URL, "_blank", "noopener,noreferrer")
   }
 

@@ -1,9 +1,11 @@
 "use client"
 import { REQUEST_URL } from "@/data/constant"
+import { sendNaverViewContent } from "@/utils/sendNaverViewContent"
 import React from "react"
 
 const AceInfo1: React.FC = () => {
   const handleClick = () => {
+    sendNaverViewContent()
     window.open(REQUEST_URL, "_blank", "noopener,noreferrer")
   }
   return (

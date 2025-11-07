@@ -2,7 +2,7 @@
 
 import { Transition } from "@headlessui/react"
 import Link from "next/link"
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import { HiBars3, HiOutlineXMark } from "react-icons/hi2"
 
 import { REQUEST_URL } from "@/data/constant"
@@ -15,6 +15,34 @@ const Header: React.FC = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen)
   }
+
+  // --------------------------------------
+  // 네이버 공통 스크립트 (PV 이벤트)
+  // --------------------------------------
+  useEffect(() => {
+    const ACCOUNT_ID = "s_123456789abcdef" // 예시 ID, 실제 ID로 교체 필요
+    const PRIMARY_DOMAIN = "ace.fittobe.ac"
+    if (!window.wcs_add) {
+      window.wcs_add = {}
+    }
+    window.wcs_add["wa"] = ACCOUNT_ID
+
+    const script = document.createElement("script")
+    script.src = "https://wcs.naver.net/wcslog.js"
+    script.async = true
+
+    script.onload = () => {
+      if (window.wcs) {
+        window.wcs.inflow(PRIMARY_DOMAIN)
+        window.wcs_do()
+      }
+    }
+    document.head.appendChild(script)
+
+    return () => {
+      document.head.removeChild(script)
+    }
+  }, [])
 
   return (
     <header className="bg-transparent fixed top-0 left-0 right-0 md:absolute z-50 mx-auto w-full">

@@ -1,7 +1,9 @@
+"use client"
 import clsx from "clsx"
 import { BsFillCheckCircleFill } from "react-icons/bs"
 
 import { IPricing } from "@/types"
+import { sendNaverViewContent } from "@/utils/sendNaverViewContent"
 
 interface Props {
   tier: IPricing
@@ -48,6 +50,9 @@ const PricingColumn: React.FC<Props> = ({ tier, highlight }: Props) => {
               "bg-hero-background hover:bg-gray-200": !highlight,
             }
           )}
+          onClick={() => {
+            sendNaverViewContent()
+          }}
         >
           신청하기
         </a>

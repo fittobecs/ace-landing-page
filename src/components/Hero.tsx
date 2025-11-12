@@ -5,7 +5,7 @@ const Hero: React.FC = () => {
   return (
     <section
       id="hero"
-      className="relative flex items-center justify-center pb-0 md:h-[650px] sm:h-[350px] h-[250px] pt-[77px] md:pt-[140px]"
+      className="relative flex items-center justify-center pb-0 max-[767px]:hidden md:h-[650px] pt-[77px] md:pt-[140px]"
     >
       <div className="relative w-full h-full">
         {/* 이미지를 감쌀 컨테이너 */}
@@ -13,13 +13,13 @@ const Hero: React.FC = () => {
           src="/images/main_logo_no.png"
           fill
           alt="picture of fms-academy-header"
-          className="object-cotain" // 또는 object-contain
+          className="object-fill" // 또는 object-contain
         />
       </div>
 
       {/* 오버레이 텍스트 */}
       <div className="absolute left-1 md:left-11 flex flex-col justify-left items-left text-left px-4">
-        <div className="relative w-20 h-5 sm:h-7 md:w-60 md:h-16  mb-4">
+        <div className="relative w-20 sd:w-50 md:w-60 h-5 sm:h-6 md:h-16 mb-4">
           <Image src="/images/ace_white.png" fill alt="ACE Logo" className="" />
         </div>
         <p className="text-sm md:text-xl text-white drop-shadow-lg">

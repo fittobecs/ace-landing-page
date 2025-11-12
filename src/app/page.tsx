@@ -8,6 +8,7 @@ import CptComparison from "@/components/CptComparison"
 import CTA from "@/components/CTA"
 import FAQ from "@/components/FAQ"
 import Hero from "@/components/Hero"
+import HeroMobile from "@/components/HeroMobile"
 import Logos from "@/components/Logos"
 import NCCACertificationComponent from "@/components/NCCACertification"
 import Pricing from "@/components/Pricing/Pricing"
@@ -18,6 +19,7 @@ const HomePage: React.FC = () => {
   return (
     <>
       <Hero />
+      <HeroMobile />
       <TopLogos />
       <Container>
         <AceMainInfo />

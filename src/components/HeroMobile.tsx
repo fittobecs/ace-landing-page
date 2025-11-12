@@ -41,7 +41,7 @@ const Hero: React.FC = () => {
           제공하는 세계적으로 인정받는 퍼스널 트레이너 자격인증 프로그램
         </p>
 
-        <p className="text-lg text-white drop-shadow-lg min-[449px]:hidden">
+        <p className="text-lg text-white drop-shadow-lg min-[451px]:hidden">
           미국 운동 협의회 (ACE: American Council on Exercise)가 제공하는
           세계적으로 인정받는 퍼스널 트레이너 자격인증 프로그램
         </p>

@@ -21,23 +21,23 @@ const NCCACertificationComponent: React.FC = () => {
       ],
     },
     {
-      organization: "NASM",
-      certifications: ["NASM - CPT (Certified Personal Trainer)"],
+      organization: "NA사",
+      certifications: ["NA사 - CPT (Certified Personal Trainer)"],
     },
     {
-      organization: "ACSM",
+      organization: "AC사",
       certifications: [
-        "ACSM - CPT (Certified Personal Trainer)",
-        "ACSM - EP (Exercise Physiologist)",
-        "ACSM - CEP (Certified Clinical Exercise Physiologist)",
+        "AC사 - CPT (Certified Personal Trainer)",
+        "AC사 - EP (Exercise Physiologist)",
+        "AC사 - CEP (Certified Clinical Exercise Physiologist)",
       ],
     },
     {
-      organization: "NSCA",
+      organization: "NS사",
       certifications: [
-        "NSCA - CPT (Certified Personal Trainer)",
-        "NSCA - CSCS (Certified Strength and Conditioning Specialist)",
-        "NSCA - TSAC-F (Tactical Strength and Conditioning - Facilitator)",
+        "NS사 - CPT (Certified Personal Trainer)",
+        "NS사 - CSCS (Certified Strength and Conditioning Specialist)",
+        "NS사 - TSAC-F (Tactical Strength and Conditioning - Facilitator)",
       ],
     },
   ]

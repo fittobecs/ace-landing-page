@@ -9,7 +9,7 @@ export const tiers: IPricing[] = [
   },
   {
     name: "시험 + 교재 + 연수",
-    link: "https://www.fittobe.ac/course/course_view.jsp?id=184374&cid=118148#course-view-184374",
+    link: "https://www.fittobe.ac/course/course_view.jsp?id=199774&cid=118148&ln=ace_cpt&gn=ace_main#course-view-199774",
     previousPrice: "1,310,000원",
     price: "990,000원",
     features: [

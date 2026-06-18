@@ -55,7 +55,7 @@ const HomePage: React.FC = () => {
           description="콤보 구매시 할인 구매 가능"
         >
           <Pricing />
-          <div className="w-full max-lg:text-center lg:text-right mt-3">
+          <div className="w-full max-lg:text-center lg:text-center mt-3">
             <span>*단체 시험 별도 문의 부탁드립니다.</span>
           </div>
         </Section>

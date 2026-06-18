@@ -17,7 +17,7 @@ const PricingColumn: React.FC<Props> = ({ tier, highlight }: Props) => {
     <div
       className={clsx(
         "w-full max-w-sm mx-auto bg-white rounded-xl border border-gray-200 lg:max-w-full",
-        { "shadow-lg": highlight }
+        { "shadow-lg": highlight },
       )}
     >
       <div className="p-6 border-b border-gray-200 rounded-t-xl">
@@ -48,7 +48,7 @@ const PricingColumn: React.FC<Props> = ({ tier, highlight }: Props) => {
             {
               "bg-primary hover:bg-primary-accent": highlight,
               "bg-hero-background hover:bg-gray-200": !highlight,
-            }
+            },
           )}
           onClick={() => {
             sendNaverViewContent()

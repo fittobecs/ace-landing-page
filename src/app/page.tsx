@@ -1,19 +1,4 @@
-import AceInfo1 from "@/components/AceInfo1"
-import AceInfo2 from "@/components/AceInfo2"
-import AceMainInfo from "@/components/AceMainInfo"
-import AceTestInfoTable from "@/components/AceTestInfoTable"
-import AceWhatType from "@/components/AceWhatType"
-import Container from "@/components/Container"
-import CptComparison from "@/components/CptComparison"
-import CTA from "@/components/CTA"
-import FAQ from "@/components/FAQ"
-import Hero from "@/components/Hero"
-import HeroMobile from "@/components/HeroMobile"
-import Logos from "@/components/Logos"
-import NCCACertificationComponent from "@/components/NCCACertification"
-import Pricing from "@/components/Pricing/Pricing"
-import Section from "@/components/Section"
-import TopLogos from "@/components/TopLogos"
+import AceLanding from "@/components/AceLanding/AceLanding"
 import Script from "next/script"
 
 const HomePage: React.FC = () => {
@@ -37,31 +22,7 @@ const HomePage: React.FC = () => {
           `,
         }}
       />
-      <Hero />
-      <HeroMobile />
-      <TopLogos />
-      <Container>
-        <AceMainInfo />
-        <AceInfo1 />
-        <AceWhatType />
-        <AceInfo2 />
-        <CptComparison />
-        <NCCACertificationComponent />
-        <AceTestInfoTable />
-        <Logos />
-        <Section
-          id="pricing"
-          title="가격 구성"
-          description="콤보 구매시 할인 구매 가능"
-        >
-          <Pricing />
-          <div className="w-full max-lg:text-center lg:text-center mt-3">
-            <span>*단체 시험 별도 문의 부탁드립니다.</span>
-          </div>
-        </Section>
-        <FAQ />
-        <CTA />
-      </Container>
+      <AceLanding />
     </>
   )
 }

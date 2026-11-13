@@ -3,7 +3,6 @@ import type { Metadata } from "next"
 import { Manrope, Source_Sans_3 } from "next/font/google"
 
 import Footer from "@/components/Footer"
-import Header from "@/components/Header"
 import { siteDetails } from "@/data/siteDetails"
 
 import "./globals.css"
@@ -42,14 +41,13 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="ko">
       <body
         className={`${manrope.className} ${sourceSans.className} antialiased`}
       >
         {siteDetails.googleAnalyticsId && (
           <GoogleAnalytics gaId={siteDetails.googleAnalyticsId} />
         )}
-        <Header />
         <main>{children}</main>
         <Footer />
       </body>
